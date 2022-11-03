@@ -54,3 +54,13 @@ signUp.addEventListener("click", ( )=>{
 signIn.addEventListener("click", ( )=>{
     center.classList.remove('active')
 });
+
+function popup(){
+    this.login_popup.style.display = "flex";
+}
+
+function closePup(){
+    this.login_popup.style.display = "none";
+}
+
+

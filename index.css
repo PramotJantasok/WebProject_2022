@@ -5,7 +5,7 @@
 
 body{
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     align-items: center;
 
 }
@@ -15,21 +15,22 @@ body{
 
 /* form */
 .contents{
+    /* display: flex; */
     position: relative;
     max-width: 480px;
     width: 100%;
     background: rgb(222, 243, 247);
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 4px 9px 18px rgba(32, 30, 30, 0.1);
     overflow: hidden;
-    /* margin: 0 20px; */
+    margin: 0 20px;
 }
 
 
 .contents .forms{
     display: flex;
     align-items: center;
-    height: 520px;
+    height: 100%;
     width: 200%;
     transition: height 0.4s ease;
 }
@@ -58,5 +59,84 @@ body{
 }
 
 .contents.active .forms{
-    height: 600px;
+    height: 115%;
+}
+
+.pop button{
+    padding: 10px 20px;
+    font-size: 50px;
+
+}
+#login_popup{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.top-form{
+    width: 100%;
+    margin: 0% 0 0 5%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: azure;
+}
+@media screen and (max-width: 445px){
+    .top-form{
+        width: 100%;
+        margin: -2% 0 0 5%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: azure;
+    }
+    .top-form .close-modal{
+        cursor: pointer;
+        padding: 0 10px;
+        font-size: 25px;
+    }
+}
+
+
+.top-form .close-modal{
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 360px){
+    .top-form{
+        width: 100%;
+        margin: -6% 0 0 5%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: azure;
+    }
+    .top-form .close-modal{
+        cursor: pointer;
+        padding: 0 10px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 275px){
+    .top-form{
+        width: 100%;
+        margin: -30% 0 0 7%;
+        display: flex;
+        justify-content: flex-end;
+        background-color: azure;
+    }
+    .top-form .close-modal{
+        cursor: pointer;
+        padding: 0 10px;
+        font-size: 25px;
+    }
 }
