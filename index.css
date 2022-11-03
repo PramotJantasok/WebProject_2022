@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.forms{
+    margin-top: -7%;
+}
+
+/* form */
+.contents{
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    background: rgb(222, 243, 247);
+    border-radius: 12px;
+    box-shadow: 4px 9px 18px rgba(32, 30, 30, 0.1);
+    overflow: hidden;
+    /* margin: 0 20px; */
+}
+
+
+.contents .forms{
+    display: flex;
+    align-items: center;
+    height: 520px;
+    width: 200%;
+    transition: height 0.4s ease;
+}
+
+.contents .form{
+    width: 50%;
+    padding: 30px;
+    background: rgb(222, 243, 247);
+    transition: margin-left 0.18s ease;
+}
+
+.contents.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.contents .register{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.contents.active .register{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.contents.active .forms{
+    height: 600px;
+}
