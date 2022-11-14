@@ -20,9 +20,6 @@ function seePassword(){
 
 //<i class="bi bi-eye"></i>
 // bi bi-eye-slash
-
-
-
 function seePassword_login(){
     let see = this.login_see;
     if (Number(see.value) == 0){

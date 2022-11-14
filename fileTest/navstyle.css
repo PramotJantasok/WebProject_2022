@@ -136,3 +136,8 @@
 .bottom-navbar a:hover {
   background: var(--dark-color);
 }
+
+
+.logo{
+  text-align: center;
+}

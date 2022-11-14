@@ -85,7 +85,7 @@ body{
     margin: 0% 0 0 5%;
     display: flex;
     justify-content: flex-end;
-    background-color: azure;
+    background: rgb(222, 243, 247);
 }
 @media screen and (max-width: 445px){
     .top-form{
@@ -140,3 +140,27 @@ body{
         font-size: 25px;
     }
 }
+
+/* @media screen and (max-width: 576px) {
+    .n_link{
+        width: 240px;
+    }
+    .s_search{
+        width: 280px;
+    }
+    .c_search{
+        width: 310px;
+    }
+} */
+
+
+
+.pad{
+    padding-bottom: 10px;
+  }
+  .as{
+    font-size: 24px;
+  }
+  .h{
+    height: 7rem;
+  }
