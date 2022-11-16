@@ -4,7 +4,7 @@ html{
     scroll-padding-top: 5rem;
     scroll-behavior: smooth; 
 } 
-
+/* swiper-wrapper */
 html::-webkit-scrollbar{
     width:1rem;
 }
@@ -141,7 +141,7 @@ section{
 }
 
 .blogs .blogs-slider .box .image{
-    height: 25rem;
+    height: 10rem;
     width: 100%;
     overflow: hidden;
 }
@@ -215,7 +215,7 @@ section{
 
 .featured .featured-slider .box .icons a{
     color:var(--black);
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     padding:1.3rem 1.5rem;
 }
 
@@ -235,7 +235,7 @@ section{
 }
 
 .featured .featured-slider .box .content .price{
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color:var(--black);
     padding-top: 1rem;
 }
