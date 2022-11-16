@@ -198,9 +198,9 @@ section{
     
 }
 
-.featured .featured-slider .box .image img{
+/* .featured .featured-slider .box .image img{
     height: 15rem;
-}
+} */
 
 .featured .featured-slider .box .icons{
     border-bottom: var(--border-hover);
