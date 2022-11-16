@@ -24,3 +24,4 @@ let requestURL = 'data.json';
             d.write(i+1+". " + book[i].detail+"<br>"+ "<br>");
         }
     }
+    

@@ -1,0 +1,12 @@
+{
+    "User":[
+        {
+            "username":"",
+            "password":"",
+            "email":"",
+            "address":[""],
+            "alert": 0,
+            "basket":[]
+        }
+    ]
+}
