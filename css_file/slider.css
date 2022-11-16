@@ -255,7 +255,6 @@ section{
     height:4rem;
     width:4rem;
     color:var(--black);
-    background: #fff;
 }
 
 .swiper-button-next::after,
@@ -266,7 +265,7 @@ section{
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
     background: var(--black);
-    color:#fff;
+    color:hsl(189, 63%, 61%);
 }
 
 
@@ -289,11 +288,12 @@ section{
 }
 
 .heading span{
-    font-size: 3rem;
+    font-size: 1.6rem;
     padding:.5rem 2rem;
     color:var(--black);
     background: #fff;
-    border:var(--border);
+    border:2px solid rgba(0,0,0,.1);
+    line-height:1.3;
 }
 .btn2{
     margin-top: 1rem;
