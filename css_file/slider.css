@@ -193,7 +193,7 @@ section{
 }
 
 .featured .featured-slider .box:hover .image{
-    transform: translateY(6rem);
+    
 }
 
 .featured .featured-slider .box .image img{
