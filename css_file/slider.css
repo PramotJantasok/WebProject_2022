@@ -190,9 +190,11 @@ section{
 .featured .featured-slider .box .image{
     padding:1rem;
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+    transition: 0.5s;
 }
 
 .featured .featured-slider .box:hover .image{
+    transform: scale(1.1);
     
 }
 
@@ -292,6 +294,24 @@ section{
     color:var(--black);
     background: #fff;
     border:var(--border);
+}
+.btn2{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border: 2px solid currentColor;
+    color:hsl(189, 63%, 61%);
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn2:hover{
+   background-color: hsl(189, 63%, 61%);
+   color: #eee;
+   border: 2px solid currentColor;
 }
 
 
