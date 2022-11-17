@@ -1,39 +1,7 @@
 <?php
-    class Users extends SQLite3 {
-        function __construct() {
-           $this->open('Users.db');
-         }
-    }
-    class Address extends SQLite3 {
-        function __construct(){
-            $this->open('Address.db');
-        }
-    }
-    class Basket extends SQLite3 {
-        function __construct(){
-            $this->open('Baskets.db');
-        }
-    }
-
-    // $userDB = new Users();
-    // $sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'users';";
-    // $ret = $userDB->exec($sql);
-    
-    // if (isset($_POST['Register_submit'])){
-    //     $username = $_POST['UserRegister'];
-    //     $email = $_POST['EmailRegister'];
-    //     $password = $_POST['PasswordRegister'];
-  
-    //     $db = new Users();
-    //     $sql =<<<EOF
-    //             INSERT INTO Users (USERNAME, PASSWORD, EMAIL)
-    //             VALUES('$username', '$password', '$email');
-    //             EOF;
-    //     error_reporting(E_ERROR | E_PARSE);
-    //     $ret = $db->exec($sql);
-    //     $db->close();
-    // }
+    include('server.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>APP</title>
     <style>
         a{
             text-decoration: none;
