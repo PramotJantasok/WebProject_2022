@@ -2,10 +2,8 @@
     include('server.php');
 ?>
   
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +33,10 @@
         </button>
         <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
             <li><a class="nav-link " href="index.html">โปรโมชั่น</a></li>
+          <li><a class="nav-link" href="home.php">หน้าหลัก</a></li>
+
             <li class="dropdown-link"><a class="nav-link">หมวดหนังสือวรรณกรรม <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown">
                 <li><a href="love.html">นิยายรัก</a></li>
