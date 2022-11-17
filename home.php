@@ -75,7 +75,7 @@
     <div class="container d-flex justify-content-center">
         <div class="contents justify-content-center">
             <div class="forms">
-                <form action="app.php" for="Login" class="form login" >
+                <form action="home.php" for="Login" class="form login" >
                     <div class="top-form">
                         <button type="button" class="btn-close" id="close" onclick="closePup()"></button>
                     </div>
@@ -86,7 +86,7 @@
                                 <div class="col">
                                     <br>
                                     <label for="username" class="form-label">ชื่อผู้ใช้ หรือ อีเมล:</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=""> 
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="Login_username"> 
                                 </div>
                             </div>
                             <div class="row">
@@ -94,7 +94,7 @@
                                     <br>
                                     <label for="setPassword" class="form-label">รหัสผ่าน:</label>
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control" placeholder="" id="login_pass">
+                                        <input type="password" class="form-control" placeholder="" id="login_pass" name="Login_password">
                                         <button class="input-group-text" type="button" id="login_see"
                                             onclick="seePassword_login()" value="0">
                                             <i class="bi bi-eye-slash" id="login_icon_see"></i></button>
@@ -104,7 +104,7 @@
                             </div>
                             <div class="row py-4">
                                 <div class="d-grid gap-2 col mx-auto">
-                                    <button class="btn btn-primary" type="button">Button</button>
+                                    <button class="btn btn-primary" type="submit" name="Login_Submit">Button</button>
                                 </div>
                             </div>
                             <div class="row">
@@ -116,7 +116,7 @@
                     </div>
                 </form>
 
-                <form action="app.php" class="form register" method="POST">
+                <form action="home.php" class="form register" method="POST">
                     <div class="top-form">
                         <button type="button" class="btn-close" onclick="closePup()" aria-label="Close"></button>
                     </div>
@@ -126,14 +126,14 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="username" class="form-label">ชื่อผู้ใช้:</label>
-                                    <input type="text" class="form-control" id="" placeholder="" name="UserRegister">
+                                    <input type="text" class="form-control" id="a" placeholder="" name="UserRegister">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <br>
                                     <label for="email" class="form-label">อีเมล:</label>
-                                    <input type="email" class="form-control" id="" placeholder="" name="EmailRegister">
+                                    <input type="email" class="form-control" id="b" placeholder="" name="EmailRegister">
                                 </div>
                             </div>
                             <div class="row">
@@ -158,7 +158,7 @@
 
                             <div class="row py-4">
                                 <div class="d-grid gap-2 col mx-auto">
-                                    <button class="btn btn-primary" type="button" name="Register_submit">ลงทะเบียน</button>
+                                    <button class="btn btn-primary" type="submit" name="Register_submit" id="Register_Button">ลงทะเบียน</button>
                                 </div>
                             </div>
                             <div class="row">
@@ -265,7 +265,6 @@
   </div>
 
   <div class="container">
-    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -273,5 +272,53 @@
 
   <script src="./js_file/modals.js"></script>
   <script src="./js_file/slider.js"></script>
+
+
+  
 </body>
 </html>
+
+<?php
+    class Users extends SQLite3 {
+        function __construct() {
+           $this->open('Users.db');
+         }
+    }
+    class Basket extends SQLite3 {
+        function __construct(){
+            $this->open('Baskets.db');
+        }
+    }
+    if (isset($_POST['Register_submit'])){
+        $username = $_POST['UserRegister'];
+        $email = $_POST['EmailRegister'];
+        $password = $_POST['PasswordRegister'];
+  
+        $db = new Users();
+        $sql =<<<EOF
+                INSERT INTO Users (USERNAME, PASSWORD, EMAIL)
+                VALUES('$username', '$password', '$email');
+                EOF;
+        error_reporting(E_ERROR | E_PARSE);
+        $ret = $db->exec($sql);
+        $db->close();
+    }
+
+    if (isset($_POST['Login_Submit'])){
+      $username = $_POST['Login_username'];
+      $password = $_POST['Login_password'];
+      $db = new Users();
+      $sql ="SELECT * from users";
+      $ret = $userDB->query($sql);
+    }
+
+    while($row = $ret->fetchArray(SQLITE3_ASSOC)) {
+      echo "<tr>";
+      echo "<td>".$row['ID']."</td>";
+      echo "<td>".$row['USERNAME']."</td>";
+      echo "<td>".$row['EMAIL']."</td>";
+      echo "<td>".$row['PASSWORD']."</td>";
+      echo "</tr>";
+  }
+
+?>
