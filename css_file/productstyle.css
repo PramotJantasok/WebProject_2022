@@ -70,3 +70,7 @@ img{
 .primary.is-outline:hover{
     color:rgb(255, 255, 255);
 }
+
+.shop-container{
+  margin-left: 10%;
+}

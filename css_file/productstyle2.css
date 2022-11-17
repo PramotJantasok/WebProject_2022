@@ -44,7 +44,7 @@ img{
 
 .box-image img{
   margin-top: 20%;
-  margin-left: 54%;
+  margin-left: 46%;
 }
 
 .button{
@@ -69,4 +69,8 @@ img{
 .is-outline:hover,
 .primary.is-outline:hover{
     color:rgb(255, 255, 255);
+}
+
+.shop-container{
+  margin-left: 10%;
 }
