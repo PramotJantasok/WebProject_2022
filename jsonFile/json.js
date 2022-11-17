@@ -6,10 +6,6 @@ let requestURL = 'data.json';
         } }; 
     request.open("GET", requestURL, true); 
     request.send();
-
-    let d = document;
-
-
     function ExtractData(book) { 
         // document.write(data.homeTown + '<br>'); 
         // for (let i = 0; i < data.person.length; i++) {
@@ -24,4 +20,5 @@ let requestURL = 'data.json';
             d.write(i+1+". " + book[i].detail+"<br>"+ "<br>");
         }
     }
+    
     
