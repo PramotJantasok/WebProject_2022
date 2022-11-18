@@ -34,7 +34,7 @@
     if (!$_SESSION['username'] && !$_SESSION['ID']){
       include('login.php');
     }else{
-      include('loginlogged.php');
+      include('logged.php');
     }
 
 ?>
