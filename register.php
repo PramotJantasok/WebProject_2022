@@ -1,26 +1,43 @@
 <?php
+    session_start();
     include('server.php');
-?>
 
-
-<?php 
-    $userDB = new Users();
-    $sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'users';";
-    $ret = $userDB->exec($sql);
+    $Errors =  array();
     
     if (isset($_POST['Register_submit'])){
         $username = $_POST['UserRegister'];
         $email = $_POST['EmailRegister'];
         $password = $_POST['PasswordRegister'];
+
+        if (empty($username) || empty($email) || empty($password)){
+            array_push($Errors, "Have empty !");
+        }
   
         $db = new Users();
-        $sql =<<<EOF
-                INSERT INTO Users (USERNAME, PASSWORD, EMAIL)
-                VALUES('$username', '$password', '$email');
-                EOF;
-        error_reporting(E_ERROR | E_PARSE);
-        $ret = $db->exec($sql);
-        $db->close();
+        $reqSQL = "SELECT * from Users";
+        $ret = $db->query($reqSQL);
+        while($row = $ret->fetchArray(SQLITE3_ASSOC)) {
+            if ($row['USERNAME'] == $username || $row['EMAIL'] == $email){
+                array_push($Errors, "Same user or Email !");
+            }
+        }
+
+        if (count($Errors) == 0){
+            $sql =<<<EOF
+                    INSERT INTO Users (USERNAME, PASSWORD, EMAIL)
+                    VALUES('$username', '$password', '$email');
+                    EOF;
+            error_reporting(E_ERROR | E_PARSE);
+            $ret = $db->exec($sql);
+            $db->close();
+            
+            header('location: home.php');
+        }
+        else{
+            $db->close();
+        }
+
+    
     }
 
 ?>
