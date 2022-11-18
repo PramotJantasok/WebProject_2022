@@ -2,7 +2,7 @@
 <?php
     // include('server.php');
     session_start();
-    $_SESSION['page'] = "./cartoon.php";
+    $_SESSION['page'] = "cartoon.php";
     error_reporting(0);
 ?>
 
@@ -91,9 +91,9 @@
 <?php 
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
-    include('./Server/login.php');
+    include('login.php');
     }else{
-    include('./Server/loginlogged.php');
+    include('loginlogged.php');
     }
 
 ?>
