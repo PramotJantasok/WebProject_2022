@@ -122,7 +122,6 @@
                   $url = "./jsonFile/data.json";    
                   $response = file_get_contents($url);
                   $data = json_decode($response);
-
                   foreach ($data as $getBooks){
 
                     if ($getBooks->hot == "YES"){
