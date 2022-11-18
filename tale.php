@@ -388,3 +388,26 @@
 </body>
 
 </html>
+
+
+
+<!-- <div class="price-wrapper">
+                                <span class="price">
+                                    <del>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 255.00
+                                            </bdi>
+                                        </span>
+                                    </del>&nbsp;
+                                    <ins>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">
+                                                 &#3647;
+                                                </span>230.00
+                                            </bdi>
+                                        </span>
+                                    </ins>
+                                </span>
+                            </div> -->
