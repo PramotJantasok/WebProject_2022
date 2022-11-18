@@ -45,6 +45,7 @@ function seePassword_login(){
 const signUp = doc.querySelector('.signUp-link');
 const signIn = doc.querySelector('.signIn-link');
 const center = doc.querySelector('.contents');
+const closes = doc.querySelector('.btn-close');
 
 signUp.addEventListener("click", ( )=>{
     center.classList.add("active");
@@ -61,5 +62,4 @@ function popup(){
 function closePup(){
     this.login_popup.style.display = "none";
 }
-
 
