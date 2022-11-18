@@ -31,7 +31,7 @@
                 HeadderLogin();
             }else{
                 $userDB->close();
-                header('location: home.php');
+                header('location: ' . $_SESSION['page']);
             }
 
         }else{
@@ -41,9 +41,12 @@
     }
 
     if (isset($_POST['logout'])){
+        $Buffer = $_SESSION['page'];
         session_destroy();
         $_SESSION['show'] = 0;
-        header("location: home.php");
+        $_SESSION['Reregis'] = 0;
+        $_SESSION['page'] = $Buffer;
+        header("location: ". $Buffer);
     }
 ?>
 

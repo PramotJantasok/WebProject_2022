@@ -1,7 +1,7 @@
 <?php
     // include('server.php');
     session_start();
-
+    $_SESSION['page'] = "home.php";
     error_reporting(0);
 ?>
 
@@ -33,7 +33,6 @@
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
       include('login.php');
-      
     }else{
       include('logged.php');
     }
