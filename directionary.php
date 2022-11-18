@@ -102,256 +102,36 @@
 
             <div class="woocommerce-notices-wrapper"></div>
             <div class="products row row-small large-columns-3 medium-columns-3 small-columns-2">
-
-                <div class="product-small  col product-type-simple">
-                    <div>
-                        <div class="product-small box ">
-                            <div class="box-image">
-                                <div class="image">
-                                    <a href="#book1" aria-label="พจนานุกรมอังกฤษ-ไทย ฉบับกะทัดรัด">
-                                        <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201611/204087/1000191548_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B0%E0%B8%97%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%94"
-                                            width="250" height="300" />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book1"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">พจนานุกรมอังกฤษ-ไทย ฉบับกะทัดรัด</a></p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 100.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>95.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book2" aria-label="พจนานุกรมอังกฤษ-ไทย ฉบับพกพา">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201611/204086/1000191547_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%81%E0%B8%9E%E0%B8%B2"
-                                        width="250" height="300" />
-                                </a>
-                            </div>
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book2"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">พจนานุกรมอังกฤษ-ไทย ฉบับพกพา</a>
-                                    </p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                                class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;85.00</span></span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        data-product_id="#bookid"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book3" aria-label="พจนานุกรมไทย สำหรับนักเรียน ฉบับสมบูรณ์">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202109/533106/1000243256_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book3"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">พจนานุกรมไทย สำหรับนักเรียน ฉบับสมบูรณ์</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price">
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 120.00
-                                            </bdi>
-                                        </span>
-                                    </del>&nbsp;
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">
-                                                 &#3647;
-                                                </span>100.00
-                                            </bdi>
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book4" aria-label="พจนานุกรมศัพท์อังกฤษต้องรู้ 5000 คำ">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201606/196016/1000187543_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B9%89-5000-%E0%B8%84%E0%B8%B3"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book4"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">พจนานุกรมศัพท์อังกฤษต้องรู้ 5000 คำ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price">
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 150.00
-                                            </bdi>
-                                        </span>
-                                    </del>&nbsp;
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">
-                                                 &#3647;
-                                                </span>125.00
-                                            </bdi>
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book5" aria-label="พจนานุกรม จีน-ไทย">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202111/536598/1000244816_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1-%E0%B8%88%E0%B8%B5%E0%B8%99-%E0%B9%84%E0%B8%97%E0%B8%A2-(%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-10)"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book5"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">พจนานุกรม จีน-ไทย</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;125.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book6" aria-label="สารานุกรมความรู้ สุดยอดแมลง">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202208/558314/1000253643_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B9%81%E0%B8%A1%E0%B8%A5%E0%B8%87"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book6"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สารานุกรมความรู้ สุดยอดแมลง</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;150.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book7" aria-label="สารานุกรมความรู้ อวกาศ">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202201/540209/1000245895_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B8%AD%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A8"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book7"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สารานุกรมความรู้ อวกาศ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;165.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
+            <?php 
+                  $url = "./jsonFile/data.json";    
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+                  foreach ($data as $getBooks){
+                    if ($getBooks->group == "พจนานุกกรม สารานุกรม"){
+                        echo '<div class="product-small  col product-type-simple">';
+                            echo '<div class="product-small box ">';
+                                echo '<div class="box-image">';
+                                    echo '<div class="image">';
+                                        echo '<a href="#book1" aria-label="">';
+                                            echo '<img src="'. $getBooks->img .'" width="250" height="300" />';
+                                        echo '</a>';
+                                    echo '</div>';
+                                echo '</div>';
+                                echo '<div class="box-text box-text-products text-center grid-style-2">';
+                                    echo '<div class="title-wrapper">';
+                                        echo '<p class="name product-title woocommerce-loop-product__title"><a href="#book1" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
+                                    echo '</div>';
+                                    echo '<div class="price-wrapper">';
+                                        echo '<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;'. $getBooks->price .'</span></span>';
+                                    echo '</div>';
+                                    echo '<div class="add-to-cart-button"><a href="#bookid" data-quantity="1" class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline" rel="nofollow">หยิบใส่ตะกร้า</a></div>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                  }
+                ?>
+            
             </div><!-- row -->
         </div><!-- shop container -->
     </div>

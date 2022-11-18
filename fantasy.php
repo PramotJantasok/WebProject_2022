@@ -101,272 +101,35 @@
 
             <div class="woocommerce-notices-wrapper"></div>
             <div class="products row row-small large-columns-3 medium-columns-3 small-columns-2">
-
-                <div class="product-small  col product-type-simple">
-                    <div>
-                        <div class="product-small box ">
-                            <div class="box-image">
-                                <div class="image">
-                                    <a href="#book1" aria-label="มุมมองนักอ่านพระเจ้า เล่ม 1">
-                                        <img src="https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A11-510x510.png"
-                                            width="250" height="300" />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book1"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">มุมมองนักอ่านพระเจ้า เล่ม 1</a></p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 285.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>265.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book2" aria-label="มุมมองนักอ่านพระเจ้า เล่ม 4">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/06/%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%A1%E0%B8%AD%E0%B8%8741-510x510.png"
-                                        width="250" height="300" />
-                                </a>
-                            </div>
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book2"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">มุมมองนักอ่านพระเจ้า เล่ม 4</a>
-                                    </p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 285.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>265.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        data-product_id="#bookid"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book3" aria-label="มุมมองนักอ่านพระเจ้า เล่ม 5">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/07/j%E0%B8%A1%E0%B8%AD%E0%B8%875-510x510.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book3"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">มุมมองนักอ่านพระเจ้า เล่ม 5</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price">
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 285.00
-                                            </bdi>
-                                        </span>
-                                    </del>&nbsp;
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">
-                                                 &#3647;
-                                                </span>265.00
-                                            </bdi>
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book4" aria-label="มุมมองนักอ่านพระเจ้า เล่ม 6">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/08/6v6-510x510.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book4"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">มุมมองนักอ่านพระเจ้า เล่ม 6</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price">
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 285.00
-                                            </bdi>
-                                        </span>
-                                    </del>&nbsp;
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">
-                                                 &#3647;
-                                                </span>265.00
-                                            </bdi>
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book5" aria-label="บันทึกวิญญาณพู่กัน เล่ม 1">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A3-510x510.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book5"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">บันทึกวิญญาณพู่กัน เล่ม 1</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;255.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book6" aria-label="หุบเขาคร่าวิญญาณ เล่ม 1">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/05/s6g-k1-510x510.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book6"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">หุบเขาคร่าวิญญาณ เล่ม 1</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;240.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book7" aria-label="เดอะฮังเกอร์เกมส์ THE HUNGER GAMES">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2021/02/%E0%B8%AE%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1-510x510.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book7"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">เดอะฮังเกอร์เกมส์ THE HUNGER GAMES</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;315.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
+            <?php 
+                  $url = "./jsonFile/data.json";    
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+                  foreach ($data as $getBooks){
+                    if ($getBooks->group == "นิยายแฟนตาซี"){
+                        echo '<div class="product-small  col product-type-simple">';
+                            echo '<div class="product-small box ">';
+                                echo '<div class="box-image">';
+                                    echo '<div class="image">';
+                                        echo '<a href="#book1" aria-label="">';
+                                            echo '<img src="'. $getBooks->img .'" width="250" height="300" />';
+                                        echo '</a>';
+                                    echo '</div>';
+                                echo '</div>';
+                                echo '<div class="box-text box-text-products text-center grid-style-2">';
+                                    echo '<div class="title-wrapper">';
+                                        echo '<p class="name product-title woocommerce-loop-product__title"><a href="#book1" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
+                                    echo '</div>';
+                                    echo '<div class="price-wrapper">';
+                                        echo '<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;'. $getBooks->price .'</span></span>';
+                                    echo '</div>';
+                                    echo '<div class="add-to-cart-button"><a href="#bookid" data-quantity="1" class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline" rel="nofollow">หยิบใส่ตะกร้า</a></div>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                  }
+                ?>
             </div><!-- row -->
         </div><!-- shop container -->
     </div>
