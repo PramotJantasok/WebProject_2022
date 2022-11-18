@@ -128,6 +128,7 @@
                             echo '</div>';
                         echo '</div>';
                     }
+                    $indexNumber += 1;
                   }
                 ?>
             </div><!-- row -->

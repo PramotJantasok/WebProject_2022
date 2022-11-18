@@ -106,7 +106,7 @@ error_reporting(0);
                   $data = json_decode($response);
                   $indexNumber = 0;
                   foreach ($data as $getBooks){
-                    if ($getBooks->group == "การ์ตูน"){
+                    if ($getBooks->group == "การ์ตูน" && $getBooks->discount == 0){
                         echo '<div class="product-small  col product-type-simple">';
                             echo '<div class="product-small box ">';
                                 echo '<div class="box-image">';
@@ -127,6 +127,9 @@ error_reporting(0);
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
+                    }
+                    if ($getBooks->group == "การ์ตูน" && $getBooks->discount > 0){
+
                     }
                     $indexNumber += 1;
                   }

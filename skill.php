@@ -107,242 +107,37 @@
 
             <div class="woocommerce-notices-wrapper"></div>
             <div class="products row row-small large-columns-3 medium-columns-3 small-columns-2">
+            <?php 
+                  $url = "./jsonFile/data.json";    
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+                  $indexNumber = 0;
+                  foreach ($data as $getBooks){
+                    if ($getBooks->group == "เสริมทักษะ"){
+                        echo '<div class="product-small  col product-type-simple">';
+                            echo '<div class="product-small box ">';
+                                echo '<div class="box-image">';
+                                    echo '<div class="image">';
+                                    echo '<a href="product.php?book='. $indexNumber. '" aria-label="">';
+                                            echo '<img src="'. $getBooks->img .'" width="250" height="300" />';
+                                        echo '</a>';
+                                    echo '</div>';
+                                echo '</div>';
+                                echo '<div class="box-text box-text-products text-center grid-style-2">';
+                                    echo '<div class="title-wrapper">';
+                                    echo '<p class="name product-title woocommerce-loop-product__title"><a href="product.php?book='.$indexNumber.'" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
+                                    echo '</div>';
+                                    echo '<div class="price-wrapper">';
+                                        echo '<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;'. $getBooks->price .'</span></span>';
+                                    echo '</div>';
+                                    echo '<div class="add-to-cart-button"><a href="#bookid" data-quantity="1" class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline" rel="nofollow">หยิบใส่ตะกร้า</a></div>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</div>';
+                    }$indexNumber += 1;
+                  }
+                ?>
 
-                <div class="product-small  col product-type-simple">
-                    <div>
-                        <div class="product-small box ">
-                            <div class="box-image">
-                                <div class="image">
-                                    <a href="#book1" aria-label="เม่นหลบฝน">
-                                        <img src="https://amarinbooks.com/wp-content/uploads/1970/01/%E0%B9%80%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%9A-510x510.png"
-                                            width="250" height="300" />
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book1"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">เม่นหลบฝน</a></p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 185.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>165.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book2" aria-label="มาเตรียมสอบเข้า ป.๑ กันเถอะ">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2017/09/pornuang-01-510x510.png"
-                                        width="250" height="300" />
-                                </a>
-                            </div>
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book2"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">มาเตรียมสอบเข้า ป.๑ กันเถอะ</a>
-                                    </p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 215.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>195.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        data-product_id="#bookid"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book5" aria-label="สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 2 ขวบ">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath2-01-800x800.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book5"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 2 ขวบ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;145.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book6" aria-label="สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 3 ขวบ">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath3-01-800x800.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book6"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 3 ขวบ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;155.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book7" aria-label="สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 4 ขวบ">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2018/02/4-01-01-800x800.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book7"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 4 ขวบ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;165.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book8" aria-label="สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 5 ขวบ">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath5-01-800x800.png"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book8"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 5 ขวบ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;175.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="imagespe">
-                                <a href="#book3" aria-label="วาดรูปสนุกกับ 8 รูปร่าง รูปทรง">
-                                    <img src="https://amarinbooks.com/wp-content/uploads/2022/03/1000181868_front_XXXL-510x609.jpg"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book3"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">วาดรูปสนุกกับ 8 รูปร่าง รูปทรง</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;210.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
             </div><!-- row -->
         </div><!-- shop container -->
     </div>

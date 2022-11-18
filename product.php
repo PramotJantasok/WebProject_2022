@@ -15,10 +15,6 @@
     $Price = $data[$_GET['book']]->price;
     $Detali = "";
 
-    // for($i = 0; $i < count($data[$_GET['book']]->detail); $i++){
-    //     $Detali = $Detali . 
-    // }
-
     foreach ($data[$_GET['book']]->detail as $mes){
         $Detali = $Detali . $mes;
     }

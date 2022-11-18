@@ -131,7 +131,7 @@
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
-                    }
+                    }$indexNumber += 1;
                   }
                 ?>
 
