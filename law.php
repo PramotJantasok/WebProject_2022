@@ -104,284 +104,36 @@
             <div class="woocommerce-notices-wrapper"></div>
             <div class="products row row-small large-columns-3 medium-columns-3 small-columns-2">
 
-                <div class="product-small  col product-type-simple">
-                    <div>
-                        <div class="product-small box ">
-                            <div class="box-image">
-                                <div class="image">
-                                    <a href="#book1" aria-label="กฎหมาย: ความรู้ฉบับพกพา">
-                                        <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202110/535012/1000244228_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2:-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%81%E0%B8%9E%E0%B8%B2-(%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B8%E0%B8%87)"
-                                            width="250" height="300" />
-                                    </a>
-                                </div>
-                            </div>
+            <?php 
+                  $url = "./jsonFile/data.json";    
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+                  foreach ($data as $getBooks){
+                    if ($getBooks->group == "กฎหมาย"){
+                        echo '<div class="product-small  col product-type-simple">';
+                            echo '<div class="product-small box ">';
+                                echo '<div class="box-image">';
+                                    echo '<div class="image">';
+                                        echo '<a href="#book1" aria-label="">';
+                                            echo '<img src="'. $getBooks->img .'" width="250" height="300" />';
+                                        echo '</a>';
+                                    echo '</div>';
+                                echo '</div>';
+                                echo '<div class="box-text box-text-products text-center grid-style-2">';
+                                    echo '<div class="title-wrapper">';
+                                        echo '<p class="name product-title woocommerce-loop-product__title"><a href="#book1" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
+                                    echo '</div>';
+                                    echo '<div class="price-wrapper">';
+                                        echo '<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;'. $getBooks->price .'</span></span>';
+                                    echo '</div>';
+                                    echo '<div class="add-to-cart-button"><a href="#bookid" data-quantity="1" class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline" rel="nofollow">หยิบใส่ตะกร้า</a></div>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                  }
+                ?>
 
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book1"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">กฎหมาย: ความรู้ฉบับพกพา</a></p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 275.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>260.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book2" aria-label="กฎหมายว่าไงนะ! What's up LAW">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201702/209143/1000193867_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%84%E0%B8%87%E0%B8%99%E0%B8%B0!-Whats-up-LAW"
-                                        width="250" height="300" />
-                                </a>
-                            </div>
-                            <div class="box-text box-text-products text-center grid-style-2">
-                                <div class="title-wrapper">
-                                    <p class="name product-title woocommerce-loop-product__title"><a href="#book2"
-                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">กฎหมายว่าไงนะ! What's up LAW</a>
-                                    </p>
-                                </div>
-                                <div class="price-wrapper">
-                                    <span class="price">
-                                        <del>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">&#3647;</span> 250.00
-                                                </bdi>
-                                            </span>
-                                        </del>&nbsp;
-                                        <ins>
-                                            <span class="woocommerce-Price-amount amount">
-                                                <bdi>
-                                                    <span class="woocommerce-Price-currencySymbol">
-                                                     &#3647;
-                                                    </span>235.00
-                                                </bdi>
-                                            </span>
-                                        </ins>
-                                    </span>
-                                </div>
-                                <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                        data-product_id="#bookid"
-                                        class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                        rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book3" aria-label="หลักและคำพิพากษา กฎหมายอาญา">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202207/553424/1000251457_front_XXL.jpg?imgname=%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%B3%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A9%E0%B8%B2-%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%8D%E0%B8%B2-(%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-12)"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book3"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">หลักและคำพิพากษา กฎหมายอาญา</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price">
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">&#3647;</span> 260.00
-                                            </bdi>
-                                        </span>
-                                    </del>&nbsp;
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <bdi>
-                                                <span class="woocommerce-Price-currencySymbol">
-                                                 &#3647;
-                                                </span>245.00
-                                            </bdi>
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book4" aria-label="รู้แล้วรอด สาระกฎหมายน่ารู้ประจำบ้าน">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202203/542757/1000246934_front_XXL.jpg?imgname=%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A3%E0%B8%AD%E0%B8%94-%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B8%E0%B8%87"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book4"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">รู้แล้วรอด สาระกฎหมายน่ารู้ประจำบ้าน</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;295.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book5" aria-label="คำอธิบายกฎหมายที่ดิน">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202210/563494/1000255584_front_XXL.jpg?imgname=%E0%B8%84%E0%B8%B3%E0%B8%AD%E0%B8%98%E0%B8%B4%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%94%E0%B8%B4%E0%B8%99"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book5"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">คำอธิบายกฎหมายที่ดิน</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;250.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book6" aria-label="รวมกฎหมายที่เกี่ยวข้องกับวิธีพิจารณาคดีฯ">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202209/561816/1000254962_front_XXL.jpg?imgname=%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B8%AF"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book6"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">รวมกฎหมายที่เกี่ยวข้องกับวิธีพิจารณาคดีฯ</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;275.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book7" aria-label="ผัว - เมีย กับเรื่องของกฎหมาย">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202201/539058/1000245736_front_XXL.jpg?imgname=%E0%B8%9C%E0%B8%B1%E0%B8%A7---%E0%B9%80%E0%B8%A1%E0%B8%B5%E0%B8%A2-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book7"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">ผัว - เมีย กับเรื่องของกฎหมาย</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;245.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-small col product-type-simple">
-
-                    <div class="product-small box ">
-                        <div class="box-image">
-                            <div class="image">
-                                <a href="#book7" aria-label="ปรัชญากฎหมาย: ความรู้ฉบับพาพา PHILOSOPHY OF LAW">
-                                    <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202104/524837/1000240602_front_XXL.jpg?imgname=%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2:-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B2%E0%B8%9E%E0%B8%B2-PHILOSOPHY-OF-LAW-"
-                                        width="250" height="300" /></a>
-                            </div>
-                        </div>
-
-                        <div class="box-text box-text-products text-center grid-style-2">
-                            <div class="title-wrapper">
-                                <p class="name product-title woocommerce-loop-product__title"><a href="#book7"
-                                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link">ปรัชญากฎหมาย: ความรู้ฉบับพาพา PHILOSOPHY OF LAW</a>
-                                </p>
-                            </div>
-                            <div class="price-wrapper">
-                                <span class="price"><span class="woocommerce-Price-amount amount"><span
-                                            class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;225.00</span></span>
-                            </div>
-                            <div class="add-to-cart-button"><a href="#bookid" data-quantity="1"
-                                    data-product_id="#bookid"
-                                    class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline"
-                                    rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                        </div>
-                    </div>
-                </div>
             </div><!-- row -->
         </div><!-- shop container -->
     </div>

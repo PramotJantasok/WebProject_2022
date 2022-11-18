@@ -129,29 +129,6 @@ error_reporting(0);
                     }
                   }
                 ?>
-                    <!-- <div class="product-small  col product-type-simple">
-                        <div>
-                            <div class="product-small box ">
-                                <div class="box-image">
-                                    <div class="image">
-                                        <a href="#book1" aria-label="SPY X FAMILY เล่ม 9">
-                                            <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202210/562076/1000255109_front_XXL.jpg?imgname=SPY-X-FAMILY-%E0%B8%A5.9" width="250" height="300" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="box-text box-text-products text-center grid-style-2">
-                                    <div class="title-wrapper">
-                                        <p class="name product-title woocommerce-loop-product__title"><a href="#book1" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">SPY X FAMILY เล่ม 9</a></p>
-                                    </div>
-                                    <div class="price-wrapper">
-                                        <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#3647;</span>&nbsp;120.00</span></span>
-                                    </div>
-                                    <div class="add-to-cart-button"><a href="#bookid" data-quantity="1" class="primary is-small mb-0 button product_type_simple add_to_cart_button ajax_add_to_cart is-outline" rel="nofollow">หยิบใส่ตะกร้า</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
     
                 </div><!-- row -->
             </div><!-- shop container -->
