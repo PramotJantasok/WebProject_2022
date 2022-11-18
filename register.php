@@ -30,14 +30,18 @@
             error_reporting(E_ERROR | E_PARSE);
             $ret = $db->exec($sql);
             $db->close();
-            
-            header('location: home.php');
+            HeadderLogin();
         }
         else{
+            HeadderRegister();
             $db->close();
         }
-
-    
     }
+
+
+
+
+
+
 
 ?>

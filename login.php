@@ -1,4 +1,18 @@
 
+<?php 
+    if ($_SESSION['show'] == 1){
+      $_SESSION['show'] = '<div class="modals" id="login_popup" style="display: flex;">';
+    }else{
+      $_SESSION['show'] = '<div class="modals" id="login_popup"';
+    }
+
+    if ($_SESSION['Reregis'] == 1){
+      $_SESSION['Reregis'] = '<div class="contents justify-content-center active">';
+    }else{
+      $_SESSION['Reregis'] = '<div class="contents justify-content-center">';
+    }
+
+?>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
     <div class="col-md-4 col-sm-6 col-lg-7 col-xl-7 col-xxl-7 col-4 n_link">
@@ -51,9 +65,9 @@
   </div>
 
 </nav>
-<div class="modals" id="login_popup">
+<?php  echo $_SESSION['show'];?>
   <div class="container d-flex justify-content-center">
-    <div class="contents justify-content-center">
+    <?php echo $_SESSION['Reregis']; ?>
       <div class="forms">
         <form action="loging.php" for="Login" class="form login" method="POST">
           <div class="top-form">
@@ -152,3 +166,7 @@
 </div>
 
 
+<?php 
+    $_SESSION['show'] = 0;
+    $_SESSION['Reregis'] =0;
+?>

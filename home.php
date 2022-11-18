@@ -1,7 +1,8 @@
 <?php
     // include('server.php');
     session_start();
-    // error_reporting(0);
+
+    error_reporting(0);
 ?>
 
   
@@ -20,6 +21,7 @@
   <!-- <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <title>Book'n Stationery SHOP</title>
+  
 </head>
 
 <body>
@@ -31,15 +33,11 @@
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
       include('login.php');
+      
     }else{
       include('logged.php');
     }
 
-    if (isset($_GET['logout'])){
-      session_destroy();
-      unset($_SESSION['username']);
-      header('location: home.php');
-    }
 ?>
 
   <div class="container-fluid">

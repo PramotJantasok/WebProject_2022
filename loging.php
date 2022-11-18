@@ -24,20 +24,26 @@
                 break;
             }
             }
+
             if (!$_SESSION['username'] && !$_SESSION['id']){
-            echo"EEEE";
-            $userDB->close();
-            $_SESSION['err'] = "Yes";
-            header('location: home.php');
+                $userDB->close();
+                $_SESSION['err'] = "Yes";
+                HeadderLogin();
             }else{
-            $userDB->close();
-            header('location: home.php');
+                $userDB->close();
+                header('location: home.php');
             }
 
         }else{
             $_SESSION['err'] = "Yes";
-            header('location: home.php');
+            HeadderLogin();
         }
+    }
+
+    if (isset($_POST['logout'])){
+        session_destroy();
+        $_SESSION['show'] = 0;
+        header("location: home.php");
     }
 ?>
 

@@ -1,6 +1,4 @@
 
-
-
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
       <div class="col-md-4 col-sm-6 col-lg-7 col-xl-7 col-xxl-7 col-4 n_link">
@@ -59,16 +57,20 @@
     <div class="container d-flex justify-content-center">
       <div class="contents justify-content-center">
         <div class="forms">
-          <form class="form logged">
-            
+          <form class="form logged" method="POST" action="loging.php">
             <div class="row">
               <div class="col">
-              <div class="top-form">
-              <button type="button" class="btn-close" id="close" onclick="closePup()"></button>
-            </div>
+                <div class="top-form">
+                  <button type="button" class="btn-close" id="close" onclick="closePup()"></button>
+                </div>
                 <div class="text-center">
                   <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" class="rounded" width="100" height="100">
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit" name="logout">Loguot</button>
               </div>
             </div>
           </form>
