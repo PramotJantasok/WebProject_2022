@@ -1,7 +1,7 @@
 <?php
     // include('server.php');
     session_start();
-    $_SESSION['page'] = "home.php";
+    $_SESSION['page'] = "./index.php";
     error_reporting(0);
 ?>
 
@@ -32,9 +32,9 @@
 <?php 
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
-      include('login.php');
+      include('./Server/login.php');
     }else{
-      include('logged.php');
+      include('./Server/loginlogged.php');
     }
 
 ?>
@@ -83,16 +83,27 @@
           <h1 class="heading"> <span>หนังสือแนะนำ</span> </h1>
           <div class="swiper featured-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide box">
-                <div class="image">
-                  <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201903/476270/1000217846_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%B9%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C-%E0%B9%80%E0%B8%94%E0%B8%A2%E0%B9%8C%E0%B9%84%E0%B8%A5%E0%B8%97%E0%B9%8C-%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%99-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%B2-(Mg)" width="250" height="300" />
-                </div>
-                <div class="content">
-                  <h3>featured books</h3>
-                  <div class="price">$15.99 <span>$20.99</span></div>
-                  <a href="#" class="btn2">หยิบใส่ตะกร้า</a>
-                </div>
-              </div>
+            <?php 
+                  $url = "./jsonFile/data.json";
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+
+                  foreach ($data as $getBooks){
+
+                    if ($getBooks->recommend == "YES"){
+                      echo '<div class="swiper-slide box">';
+                        echo '<div class="image">';
+                          echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
+                        echo '</div>';
+                        echo '<div class="content">';
+                          echo '<h3>' . $getBooks->name . '</h3>';
+                          echo '<div class="price">$'. $getBooks->price .'<span>$20.99</span></div>';
+                          echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
+                        echo '</div>';
+                      echo '</div>';
+                    }
+                  }
+              ?>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -107,7 +118,29 @@
           <h1 class="heading"> <span>หนังสือขายดี</span> </h1>
           <div class="swiper featured-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide box">
+              <?php 
+                  $url = "./jsonFile/data.json";    
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+
+                  foreach ($data as $getBooks){
+
+                    if ($getBooks->hot == "YES"){
+                      echo '<div class="swiper-slide box">';
+                        echo '<div class="image">';
+                          echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
+                        echo '</div>';
+                        echo '<div class="content">';
+                          echo '<h3>' . $getBooks->name . '</h3>';
+                          echo '<div class="price">$'. $getBooks->price .'<span>$20.99</span></div>';
+                          echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
+                        echo '</div>';
+                      echo '</div>';
+                    }
+                  }
+              ?>
+
+              <!-- <div class="swiper-slide box">
                 <div class="image">
                   <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202210/562076/1000255109_front_XXL.jpg?imgname=SPY-X-FAMILY-%E0%B8%A5.9" width="250" height="300" />
                 </div>
@@ -116,11 +149,13 @@
                   <div class="price">$15.99 <span>$20.99</span></div>
                   <a href="#" class="btn2">หยิบใส่ตะกร้า</a>
                 </div>
-              </div>
-            </div>s
+              </div> -->
+            </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
+
+          
         </section>
       </div>
     </div>
