@@ -67,6 +67,23 @@
         </div>
     </form>
 
+    <br><br><br><br><br>
+    <div class="container">
+        <h1 class="text-center">USER Baskets</h1>
+        <table class="table">
+            <thead class="bg-info">
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">USERNAME</th>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">INDEX</th>
+                <th scope="col">AMOUNT</th>
+                <th scope="col">TIME</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
     
 
 </body>

@@ -15,6 +15,19 @@
         }
     }
 
+    // $db = new Basket();
+    // $sql = <<<EOF
+    // CREATE TABLE basket
+    // (ID INT NOT NULL,
+    // USERNAME CHAR(255) NOT NULL,
+    // NAMEPRODUCT TEXT NOT NULL,
+    // INDEXJSON INT NOT NULL,
+    // AMOUNT INT NOT NULL,
+    // TIME CHAR(255) NOT NULL);
+    // EOF;
+    // $ret = $db->exec($sql);
+    // $db->close();
+
     // $userDB = new Users();
     // $sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'users';";
     // $ret = $userDB->exec($sql);
