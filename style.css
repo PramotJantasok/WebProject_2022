@@ -56,9 +56,6 @@ body {
 .summary .col-10 {
   padding: 0;
 }
-.row {
-  margin: 0;
-}
 .title b {
   font-size: 1.5rem;
 }
@@ -94,7 +91,7 @@ h5 {
 hr {
   margin-top: 1.25rem;
 }
-form {
+.basketForm {
   padding: 2vh 0;
 }
 .txtform {
@@ -116,10 +113,10 @@ select {
   width: 100%;
   background-color: rgb(247, 247, 247);
 }
-input:focus::-webkit-input-placeholder {
+.basketInput:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.btn {
+.basketBUT {
   background-color: #000;
   border-color: #000;
   color: white;
@@ -129,7 +126,7 @@ input:focus::-webkit-input-placeholder {
   padding: 1vh;
   border-radius: 0;
 }
-.btn:focus {
+.basketBUT:focus {
   box-shadow: none;
   outline: none;
   box-shadow: none;
@@ -138,7 +135,7 @@ input:focus::-webkit-input-placeholder {
   -webkit-user-select: none;
   transition: none;
 }
-.btn:hover {
+.basketBUT:hover {
   background-color: #1b1b1b;
 }
 a {

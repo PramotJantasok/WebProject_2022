@@ -29,6 +29,7 @@
 
   <?php 
 
+	
     if (!$_SESSION['username'] && !$_SESSION['ID']){
       include('login.php');
     }else{
@@ -36,8 +37,12 @@
     }
 
 	?>
+	<div class="container">
+	
+	</div>
 
-<div class="container-fluid">
+<div class="container-fluid py-4">
+
 	<div class="card">
 		<div class="row">
 			<div class="col-md-8 cart">
@@ -98,7 +103,7 @@
 					<div class="col">มูลค่า</div>
 					<div class="col text-right">132.00 บาท</div>
 				</div>
-				<form>
+				<form class="basketForm">
 					<div class="txtform">การจัดส่ง</div>
 					<select>
 						<option class="text-muted">จัดส่งแบบธรรมดา - 5.00 บาท</option>
@@ -106,7 +111,7 @@
 					</select>
 					<div class="txtform">คูปอง</div>
 					<input placeholder="Enter your code" class="basketInput">
-					<button style="margin: 0.5vh 0;" class="btn">ใช้คูปอง</button>
+					<button style="margin: 0.5vh 0;" class="basketBUT">ใช้คูปอง</button>
 
 					<div class="txtform">ที่อยู่</div>
 					<input placeholder="Enter your Address" class="basketInput">
@@ -115,7 +120,7 @@
 					<div class="col">รวม</div>
 					<div class="col text-right">137.00 บาท</div>
 				</div>
-				<button class="btn">ชำระเงิน</button>
+				<button class="basketBUT">ชำระเงิน</button>
 			</div>
 		</div>
 		<div></div>
