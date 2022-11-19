@@ -97,7 +97,7 @@
               </div>
               <div class="row py-4">
                 <div class="d-grid gap-2 col mx-auto">
-                  <button class="btn btn-primary" type="submit" name="Login_Submit">Button</button>
+                  <button class="btn btn-primary" type="submit" name="Login_Submit">เข้าสู่ระบบ</button>
                 </div>
               </div>
               <div class="row">
