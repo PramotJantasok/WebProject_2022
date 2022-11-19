@@ -97,7 +97,7 @@
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
-                          echo '<div class="price">$'. $getBooks->price .'<span>$20.99</span></div>';
+                          echo '<div class="price">$'. $getBooks->price .'</div>';
                           echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
                         echo '</div>';
                       echo '</div>';
@@ -131,7 +131,7 @@
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
-                          echo '<div class="price">$'. $getBooks->price .'<span>$20.99</span></div>';
+                          echo '<div class="price">$'. $getBooks->price .'</div>';
                           echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
                         echo '</div>';
                       echo '</div>';
