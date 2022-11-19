@@ -177,7 +177,7 @@
 
                   foreach ($data as $getBooks){
 
-                    if ($getBooks->recommend == "YES"){
+                    if ($getBooks->Promotion == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
                           echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
