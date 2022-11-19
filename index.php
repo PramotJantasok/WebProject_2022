@@ -144,6 +144,7 @@
                   }
               ?>
 
+
               <!-- <div class="swiper-slide box">
                 <div class="image">
                   <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202210/562076/1000255109_front_XXL.jpg?imgname=SPY-X-FAMILY-%E0%B8%A5.9" width="250" height="300" />
@@ -160,6 +161,40 @@
           </div>
 
           
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <section class="featured" id="featured">
+          <h1 class="heading"> <span>โปรโมชั่น</span> </h1>
+          <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+            <?php 
+                  $url = "./jsonFile/data.json";
+                  $response = file_get_contents($url);
+                  $data = json_decode($response);
+
+                  foreach ($data as $getBooks){
+
+                    if ($getBooks->recommend == "YES"){
+                      echo '<div class="swiper-slide box">';
+                        echo '<div class="image">';
+                          echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
+                        echo '</div>';
+                        echo '<div class="content">';
+                          echo '<h3>' . $getBooks->name . '</h3>';
+                          echo '<div class="price">$'. $getBooks->price .'</div>';
+                          echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
+                        echo '</div>';
+                      echo '</div>';
+                    }
+                  }
+              ?>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </section>
       </div>
     </div>
