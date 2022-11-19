@@ -21,7 +21,12 @@
   <!-- <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <title>Book'n Stationery SHOP</title>
-  
+  <style>
+    .featured .featured-slider .box .content h3{
+    font-size: 1rem;
+    color:var(--black);
+}
+  </style>
 </head>
 
 <body>
@@ -130,7 +135,7 @@
                           echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
                         echo '</div>';
                         echo '<div class="content">';
-                          echo '<h3>' . $getBooks->name . '</h3>';
+                          echo '<h3 maxlength="10">' . $getBooks->name . '</h3>';
                           echo '<div class="price">$'. $getBooks->price .'</div>';
                           echo '<a href="#" class="btn2">หยิบใส่ตะกร้า</a>';
                         echo '</div>';

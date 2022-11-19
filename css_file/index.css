@@ -217,7 +217,7 @@ body{
     top: 105%;
     opacity: 1;
     visibility: visible;
-  }
+  } */
   .dropdown-link:hover a i {
     transform: rotate(-180deg);
   }

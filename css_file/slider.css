@@ -233,12 +233,12 @@ section{
 }
 
 .featured .featured-slider .box .content h3{
-    font-size: 2rem;
+    font-size: 1rem;
     color:var(--black);
 }
 
 .featured .featured-slider .box .content .price{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:var(--black);
     padding-top: 1rem;
 }
