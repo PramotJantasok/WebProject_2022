@@ -391,7 +391,7 @@
 
 
 
-<!-- <div class="price-wrapper">
+                            <div class="price-wrapper">
                                 <span class="price">
                                     <del>
                                         <span class="woocommerce-Price-amount amount">
@@ -410,4 +410,4 @@
                                         </span>
                                     </ins>
                                 </span>
-                            </div> -->
+                            </div>
