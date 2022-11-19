@@ -8,31 +8,31 @@
         <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
 
-            <li><a class="nav-link " href="index.html">โปรโมชั่น</a></li>
-          <li><a class="nav-link" href="home.php">หน้าหลัก</a></li>
+          
+          <li><a class="nav-link" href="index.php">หน้าหลัก</a></li>
 
             <li class="dropdown-link"><a class="nav-link">หมวดหนังสือวรรณกรรม <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown">
-                <li><a href="love.html">นิยายรัก</a></li>
-                <li><a href="fantasy.html">นิยายแฟนตาซี</a></li>
-                <li><a href="horror.html">นิยายสยองขวัญ</a></li>
-                <li><a href="detective.html">นิยายสืบสวน</a></li>
+                <li><a href="love.php">นิยายรัก</a></li>
+                <li><a href="fantasy.php">นิยายแฟนตาซี</a></li>
+                <li><a href="horror.php">นิยายสยองขวัญ</a></li>
+                <li><a href="detective.php">นิยายสืบสวน</a></li>
               </ul>
             </li>
             <li class="dropdown-link"><a class="nav-link">หมวดหนังสือการศึกษา <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown">
-                <li><a href="study.html">คู่มือการเรียน-สอบ</a></li>
-                <li><a href="directionary.html">พจนานุกรม-สารานุกรม</a></li>
-                <li><a href="law.html">หนังสือกฏหมาย</a></li>
+                <li><a href="study.php">คู่มือการเรียน-สอบ</a></li>
+                <li><a href="directionary.php">พจนานุกรม-สารานุกรม</a></li>
+                <li><a href="law.php">หนังสือกฏหมาย</a></li>
               </ul>
             </li>
             <li class="dropdown-link"><a class="nav-link">หมวดหนังสือเด็กเล็ก <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown">
-                <li><a href="cartoon.html">หนังสือการ์ตูน</a></li>
-                <li><a href="tale.html">หนังสือนิทาน</a></li>
-                <li><a href="knowledge.html">หนังสือภาพความรู้</a></li>
-                <li><a href="kid.html">หนังสือเด็กเล็ก</a></li>
-                <li><a href="skill.html">หนังสือเสริมทักษะ</a></li>
+                <li><a href="cartoon.php">หนังสือการ์ตูน</a></li>
+                <li><a href="tale.php">หนังสือนิทาน</a></li>
+                <li><a href="knowledge.php">หนังสือภาพความรู้</a></li>
+                <li><a href="kid.php">หนังสือเด็กเล็ก</a></li>
+                <li><a href="skill.php">หนังสือเสริมทักษะ</a></li>
               </ul>
             </li>
           </ul>

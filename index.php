@@ -1,7 +1,7 @@
 <?php
     // include('server.php');
     session_start();
-    $_SESSION['page'] = "./index.php";
+    $_SESSION['page'] = "index.php";
     error_reporting(0);
 ?>
 
@@ -32,9 +32,9 @@
 <?php 
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
-      include('./Server/login.php');
+      include('login.php');
     }else{
-      include('./Server/loginlogged.php');
+      include('logged.php');
     }
 
 ?>
@@ -122,7 +122,6 @@
                   $url = "./jsonFile/data.json";    
                   $response = file_get_contents($url);
                   $data = json_decode($response);
-
                   foreach ($data as $getBooks){
 
                     if ($getBooks->hot == "YES"){

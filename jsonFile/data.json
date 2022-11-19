@@ -14,8 +14,9 @@
             "ราวบทใหม่ วิ่งไปกลับระหว่างสถานีทาคาระซึกะ และสถานีนิชิโนะมิยะคิตะงุจิต่อไปอย่างไม่รู้จักเหน็ดเหนื่อย"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/07/%E0%B8%84%E0%B8%B8%E0%B8%93-%E0%B8%9C%E0%B8%A1-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"เราจะได้พบกันเมื่อวันซากุระบาน",
@@ -33,7 +34,8 @@
         ],
         "img": "https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%8B%E0%B8%B2%E0%B8%81%E0%B8%B8%E0%B8%A3%E0%B8%B0-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"แด่เธอผู้เปล่งประกายใต้แสงจันทร์",
@@ -49,7 +51,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/08/Pocket-Book-%E0%B9%80%E0%B8%A7%E0%B9%87%E0%B8%9B-08-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"เศษเสี้ยวจากแสงจันทร์ที่ครั้งหนึ่งนั้นเคยเปล่งประกาย",
@@ -64,7 +67,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/11/gLKgluhpclj0yomiN-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"ฉันจะข้ามเวลาไปหาเธอ",
@@ -81,7 +85,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/01/%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%B0%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"วิฬาร์วุ่นรัก",
@@ -97,7 +102,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/10/%E0%B8%A7%E0%B8%AC%E0%B8%A7%E0%B8%A3-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"ลิขิตรักข้ามปรภพ",
@@ -113,7 +119,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/10/%E0%B8%9B%E0%B8%A3%E0%B8%A0%E0%B8%9E-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name":"ฝันรักในเงาเมฆ",
@@ -128,7 +135,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/05/%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%99-510x510.png",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
 
     {   
@@ -146,13 +154,14 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%A1%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A11-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "มุมมองนักกอ่านหระเจ้า เล่ม 4",
         "id": "FANTACY-0003",
-        "group": "sing N song",
-        "Writer": "",
+        "group": "นิยายแฟนตาซี",
+        "Writer": "sing N song ",
         "price": 265.00,
         "detail":[
             "สมาชิกกลุ่มกระจัดกระจายกันไปใน ‘โลกที่ไร้ราชา’ แต่คนแรกที่คิมดกจาได้เจอแทนที่จะเป็นเพื่อนคนใดคนหนึ่งกลับกลายเป็นยัยนักเขียนขี้ก๊อปนั่นซะได้ คู่กัดเลยต้องจับมือกันชั่วคราว เตรียมความพร้อมสู่ซีนาริโอถัดไป ",
@@ -161,7 +170,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/06/%E0%B8%A1%E0%B8%B8%E0%B8%A1%E0%B8%A1%E0%B8%AD%E0%B8%8741-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "มุมมองนักอ่านพระเจ้า เล่ม 5 ",
@@ -175,7 +185,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/07/j%E0%B8%A1%E0%B8%AD%E0%B8%875-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "มุมมองนักอ่านพระเจ้า เล่ม 6",
@@ -189,7 +200,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/6v6-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "บันทึกวิญญาณพู่กัน เล่ม 1",
@@ -206,7 +218,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%A7%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%A3-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "หุบเขาคร่าวิญญาณ เล่ม 1",
@@ -222,7 +235,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/05/s6g-k1-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เดอะฮังเกอร์เกมส์ THE HUNGER GAMES",
@@ -238,7 +252,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/02/%E0%B8%AE%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
 
     {
@@ -253,8 +268,9 @@
             "คานาเดะมุ่งหน้าไปยังอุโมงค์อินุนาคิเพื่อตามหาความจริงทั้งหมดความจริงสุดช็อกที่ไม่ควรก้าวเท้าเข้าไปยุ่งกำลังรอคอยทุกคนอยู่…เวอร์ชันภาพยนตร์ก็กำลังเป็นที่นิยมอยู่เช่นกัน"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/04/%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%AB%E0%B8%AD%E0%B8%99-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ปลุกมาหลอน",
@@ -269,7 +285,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/01/2-01_0-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },    
 
     {
@@ -289,7 +306,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/07/%E0%B8%8A%E0%B8%94%E0%B9%83%E0%B8%8A%E0%B9%89-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },    
     {
         "name": "ปีศาจยามวิกาล",
@@ -308,7 +326,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2020/10/%E0%B8%9B%E0%B8%B5%E0%B8%A8%E0%B8%B2%E0%B8%88%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A5-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คฤหาสน์หลอน",
@@ -326,7 +345,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2019/03/%E0%B8%84%E0%B8%A4%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%99-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
 
     {
@@ -351,7 +371,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2019/03/student24-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คดีฆาตกรรมในคฤหาสน์แมวดำ",
@@ -366,9 +387,10 @@
             "สิ่งที่เขาเขียนในบันทึกเป็นเรื่องที่เกิดขึ้นจริงหรือเป็นเพียงนิยายกันเเน่… ",
             "จากบันทึกเล่มหนึ่งของชายไร้ความทรงจำ นำไปสู่เหตุฆาตกรรมที่ไม่มีใครอยากเปิดเผย‼️"
         ],
-        "img":"",
+        "img":"https://amarinbooks.com/wp-content/uploads/2022/05/%E0%B9%81%E0%B8%A1%E0%B8%A7%E0%B8%94%E0%B8%B3-510x510.png",
         "hot":"",
-        "recommend":"https://amarinbooks.com/wp-content/uploads/2022/05/%E0%B9%81%E0%B8%A1%E0%B8%A7%E0%B8%94%E0%B8%B3-510x510.png"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "นักสืบสื่อวิญญาณ",
@@ -386,7 +408,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/02/33724-510x510.jpg",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คดีฆาตกรรมในบ้านสิบเหลี่ยม",
@@ -402,8 +425,9 @@
             "แต่แล้วเหตุการณ์ไม่คาดฝันก็เกิดขึ้น เมื่อนักศึกษาคนหนึ่งถูกฆาตกรรม การตามหาฆาตกรบนเกาะแห่งนี้จึงเริ่มต้นขึ้น…"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/06/10%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คุณนั่นแหละ…ฆาตกร",
@@ -420,7 +444,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2020/10/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%B0%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%81%E0%B8%A3-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ลูกรักของปีศาจ นิยายชุด คินดะอิจิ ยอดนักสืบ",
@@ -440,7 +465,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2020/10/%E0%B8%84%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B0%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ผมพูดไม่ได้ว่าใครคือฆาตกร",
@@ -456,7 +482,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/09/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เด็กสาวฆาตกร",
@@ -474,7 +501,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2020/10/%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%86%E0%B8%B2%E0%B8%95%E0%B8%81%E0%B8%A3-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เตรียมสอบเข้ม เข้า ม.4 ครบ 5 วิชาหลัก มั่นใจเต็ม 100",
@@ -491,7 +519,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202107/531173/1000242601_front_XXL.jpg?imgname=%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%A1-%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2-%E0%B8%A1.4-%E0%B8%84%E0%B8%A3%E0%B8%9A-5-%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81-%E0%B8%A1%E0%B8%B1%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1-100",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ตะลุยข้อสอบภาษาจีน เตรียมสอบเข้ามหาวิทยาลัย",
@@ -505,8 +534,9 @@
             "สื่อสาร การอ่าน และการเขียนภาษาจีน เหมาะสำหรับครูผู้สอน และผู้ที่กำลังเตรียมสอบวัดความถนัดภาษาจีน"
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/564463/1000255793_front_XXL.jpg?imgname=%E0%B8%95%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%A2%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%88%E0%B8%B5%E0%B8%99-%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สอบผ่าน ก.พ. ภาค ก ระดับ 3",
@@ -521,7 +551,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201804/233473/1000206712_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-%E0%B8%81.%E0%B8%9E.-%E0%B8%A0%E0%B8%B2%E0%B8%84-%E0%B8%81-%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A-3-(%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5)",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คู่มือเตรียมสอบ ธกส.ความรู้ความสามารถทั่วไป",
@@ -538,7 +569,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/563509/1000255587_front_XXL.jpg?imgname=%E0%B8%84.%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A-%E0%B8%98%E0%B8%81%E0%B8%AA.%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คู่มือ-เตรียมสอบ วิทยาศาสตร์ ม.3",
@@ -553,7 +585,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/564295/1000255622_front_XXL.jpg?imgname=%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD-%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A-%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-%E0%B8%A1.3",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เตรียมพร้อมสอบ A-Level คณิต2",
@@ -567,7 +600,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/562190/1000255146_front_XXL.jpg?imgname=%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A-A-Level-%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%952",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เตรียมพร้อมสอบ TPAT 5 ความถนัดครุศาสตร์-ศึกษาศาสตร์",
@@ -581,7 +615,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202209/561815/1000254552_front_XXL.jpg?imgname=%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%9E%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A-TPAT-5-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%96%E0%B8%99%E0%B8%B1%E0%B8%94%E0%B8%84%E0%B8%A3%E0%B8%B8%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เตรียมสอบ A-Level คณิตศาสตร์ ม.ปลาย มั่นใจเต็ม100",
@@ -595,7 +630,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202209/559385/1000253797_front_XXL.jpg?imgname=%E0%B9%80%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A1%E0%B8%AA%E0%B8%AD%E0%B8%9A-A-Level-%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C-%E0%B8%A1.%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2-%E0%B8%A1%E0%B8%B1%E0%B9%88%E0%B8%99",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "พจนานุกรมอังกฤษ-ไทย ฉบับกะทัดรัด",
@@ -613,7 +649,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201611/204087/1000191548_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B0%E0%B8%97%E0%B8%B1%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%94",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "พจนานุกรมอังกฤษ-ไทย ฉบับพกพา",
@@ -630,7 +667,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201611/204086/1000191547_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9-%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%81%E0%B8%9E%E0%B8%B2",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "พจนานุกรมไทย สำหรับนักเรียน ฉบับสมบูรณ์",
@@ -646,7 +684,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202109/533106/1000243256_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%AA%E0%B8%B3%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "พจนานุกรมศัพท์อังกฤษต้องรู้ 5000 คำ",
@@ -660,7 +699,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201606/196016/1000187543_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%A8%E0%B8%B1%E0%B8%9E%E0%B8%97%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B9%89-5000-%E0%B8%84%E0%B8%B3",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "พจนานุกรม จีน-ไทย",
@@ -677,7 +717,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202111/536598/1000244816_front_XXL.jpg?imgname=%E0%B8%9E%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1-%E0%B8%88%E0%B8%B5%E0%B8%99-%E0%B9%84%E0%B8%97%E0%B8%A2-(%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-10)",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สารานุกรมความรู้ สุดยอดแมลง",
@@ -693,7 +734,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202208/558314/1000253643_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%A2%E0%B8%AD%E0%B8%94%E0%B9%81%E0%B8%A1%E0%B8%A5%E0%B8%87",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สารานุกรมความรู้ อวกาศ",
@@ -710,7 +752,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202201/540209/1000245895_front_XXL.jpg?imgname=%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%99%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89-%E0%B8%AD%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A8",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "กฎหมาย: ความรู้ฉบับพกพา",
@@ -727,7 +770,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202110/535012/1000244228_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2:-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%81%E0%B8%9E%E0%B8%B2-(%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B8%E0%B8%87)",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "กฎหมายว่าไงนะ! What's up LAW",
@@ -747,7 +791,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201702/209143/1000193867_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%84%E0%B8%87%E0%B8%99%E0%B8%B0!-Whats-up-LAW",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "หลักและคำพิพากษา กฎหมายอาญา",
@@ -764,7 +809,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202207/553424/1000251457_front_XXL.jpg?imgname=%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%B3%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B2%E0%B8%81%E0%B8%A9%E0%B8%B2-%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%B2%E0%B8%8D%E0%B8%B2-(%E0%B8%9E%E0%B8%B4%E0%B8%A1%E0%B8%9E%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88-12)",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "รู้แล้วรอด สาระกฎหมายน่ารู้ประจำบ้าน",
@@ -785,7 +831,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202203/542757/1000246934_front_XXL.jpg?imgname=%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A3%E0%B8%AD%E0%B8%94-%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%B8%E0%B8%87",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คำอธิบายกฎหมายที่ดิน",
@@ -802,7 +849,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/563494/1000255584_front_XXL.jpg?imgname=%E0%B8%84%E0%B8%B3%E0%B8%AD%E0%B8%98%E0%B8%B4%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%94%E0%B8%B4%E0%B8%99",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "รวมกฎหมายที่เกี่ยวข้องกับวิธีพิจารณาคดีฯ",
@@ -817,7 +865,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202209/561816/1000254962_front_XXL.jpg?imgname=%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B8%AF",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ผัว - เมีย กับเรื่องของกฎหมาย",
@@ -835,7 +884,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202201/539058/1000245736_front_XXL.jpg?imgname=%E0%B8%9C%E0%B8%B1%E0%B8%A7---%E0%B9%80%E0%B8%A1%E0%B8%B5%E0%B8%A2-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ปรัชญากฎหมาย: ความรู้ฉบับพาพา PHILOSOPHY OF LAW",
@@ -855,7 +905,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202104/524837/1000240602_front_XXL.jpg?imgname=%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%8A%E0%B8%8D%E0%B8%B2%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2:-%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B2%E0%B8%9E%E0%B8%B2-PHILOSOPHY-OF-LAW-",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "SPY X FAMILY เล่ม 9",
@@ -870,7 +921,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202210/562076/1000255109_front_XXL.jpg?imgname=SPY-X-FAMILY-%E0%B8%A5.9",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 60
     },
     {
         "name": "การินจูเนียร์ เดย์ไลท์ ลันตา การิน กับสัตว์เลี้ยงโลกมายา",
@@ -886,7 +938,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201903/476270/1000217846_front_XXL.jpg?imgname=%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%B9%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C-%E0%B9%80%E0%B8%94%E0%B8%A2%E0%B9%8C%E0%B9%84%E0%B8%A5%E0%B8%97%E0%B9%8C-%E0%B8%A5%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B2-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%99-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%B5%E0%B9%89%E0%B8%A2%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%B2-(Mg)",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "Pokemon โปเกมอน Special เล่ม 54",
@@ -903,7 +956,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202201/539084/1000245683_front_XXL.jpg?imgname=Pokemon-%E0%B9%82%E0%B8%9B%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%AD%E0%B8%99-Special-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-54",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เอาชีวิตรอดจากปรสิต เล่ม 2",
@@ -919,7 +973,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202111/535889/1000244419_front_XXL.jpg?imgname=%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%AD%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%AA%E0%B8%B4%E0%B8%95-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-2",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ไขปริศนาพีระมิด",
@@ -935,7 +990,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/201904/477072/1000218240_front_XXL.jpg?imgname=%E0%B9%84%E0%B8%82%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%A8%E0%B8%99%E0%B8%B2%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%B4%E0%B8%94",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คุกกี้รันเอาชีวิตรอด เล่ม 18 จากลมโหมกระหน่ำ",
@@ -949,7 +1005,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202201/539192/1000245795_front_XXL.jpg?imgname=%E0%B8%84%E0%B8%B8%E0%B8%81%E0%B8%81%E0%B8%B5%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%AD%E0%B8%94-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-18-%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%A1%E0%B9%82%E0%B8%AB%E0%B8%A1%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%B3",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "DRAGON QUEST การผจญภัยอันยิ่งใหญ่ของได เล่ม 1",
@@ -965,7 +1022,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202108/531945/1000242765_front_XXL.jpg?imgname=DRAGON-QUEST-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9C%E0%B8%88%E0%B8%8D%E0%B8%A0%E0%B8%B1%E0%B8%A2%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%84%E0%B8%94-%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%A1-1-%E0%B8%A8%E0%B8%B4%E0%B8%A9%E0%B8%A2%E0%B9%8C%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B8%A7%E0%B8%B2%E0%B8%99-%E0%B8%9B%E0%B8%B0%E0%B8%97%E0%B8%B0%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%9A%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B1%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%9B%E0%B8%B5%E0%B8%A8%E0%B8%B2%E0%B8%88",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
 
     {
@@ -982,7 +1040,8 @@
         ],
         "img":"https://storage.naiin.com/system/application/bookstore/resource/product/202205/548593/1000248917_front_XXL.jpg?imgname=%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C%E0%B9%82%E0%B8%A5%E0%B8%81-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%B8%E0%B8%81-%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%95%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%81-%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B8%A1%E0%B8%B7%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%A2%E0%B8%B8%E0%B9%82%E0%B8%A3%E0%B8%9B",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ฮานะจัง…ตื่นแต่เช้า",
@@ -997,8 +1056,9 @@
             "เรื่องราวแสนน่ารักจากกิจวัตรยามเช้าของฮานะจังจะช่วยส่งเสริมการเติบโตของเด็กๆ หลากหลายด้านด้วยกัน"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/10/%E0%B8%95%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ฮานะจัง…กับจดหมายของใครนะ",
@@ -1013,7 +1073,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/10/%E0%B8%88%E0%B8%94%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B0-510x510.png",
         "hot":"",
-        "recommend":"YES"
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ร้านอาหารของคุณแมวเทากับคุณเป็ดขาว",
@@ -1030,7 +1091,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/%E0%B9%81%E0%B8%A1%E0%B8%A7%E0%B9%80%E0%B8%97%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B8%BA%E0%B8%94%E0%B8%82%E0%B8%B2%E0%B8%A7-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เกมแสนสนุกของคุณหมีและคุณหนู",
@@ -1045,7 +1107,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/%E0%B8%AB%E0%B8%A1%E0%B8%B5%E0%B8%AB%E0%B8%99%E0%B8%B9-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เดี๋ยวเปิดให้นะ",
@@ -1061,7 +1124,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/%E0%B9%80%E0%B8%94%E0%B9%88%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%99%E0%B8%B0-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "กรัฟฟาโล่",
@@ -1079,7 +1143,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "กระดุมวิเศษของคุณครูหมี",
@@ -1093,7 +1158,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/08/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B8%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "วันตัดผมของสิงโต",
@@ -1107,7 +1173,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/07/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%9C%E0%B8%A1-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "หนูรอบรู้ ชวนเพื่อนดูแมลง",
@@ -1123,7 +1190,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/06/1_Cover-Choun-pheun-do-MALANG-CC-OK-02-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คำถามน่ารู้หนูตอบได้ เรื่อง ดวงจันทร์",
@@ -1140,7 +1208,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/05/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "คำถามน่ารู้หนูตอบได้ เรื่อง ระบบสุริยะ",
@@ -1155,7 +1224,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/05/%E0%B8%84%E0%B8%B3%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B8%B0-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ความลับจากธรรมชาติ",
@@ -1168,7 +1238,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/10/4-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "มหัศจรรย์ล้อรอบโลก",
@@ -1185,7 +1256,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/04/%E0%B8%A5%E0%B9%89%E0%B8%AD-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เปิดความลับ ทะเลและมหาสมุทร",
@@ -1201,7 +1273,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/05/%E0%B9%80%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A5%E0%B8%B1%E0%B8%9A%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เปิดความลับ โรงพยาบาล",
@@ -1214,8 +1287,9 @@
             "พบกับผู้คนน่าทิ่งที่ทำงานอยู่ที่นั่น และเรียนรู้ว่าทุกคนทำงานอย่างไรให้คนไข้หายป่วยและมีสุขภาพดี"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2020/01/hospital-02-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "นิ้วมือแปลงกาย",
@@ -1231,7 +1305,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2021/05/%E0%B8%99%E0%B8%B4%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A2-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "กระโถนของฉัน",
@@ -1245,7 +1320,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2019/06/%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%96%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%89%E0%B8%B1%E0%B8%99-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ชวนหนูเรียนรู้สิ",
@@ -1259,8 +1335,9 @@
             "เชื่อมโยงสิ่งรอบตัว"
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/11/chunnoocolor-01-510x510.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "ชวนหนูเรียนรู้ A-Z",
@@ -1275,7 +1352,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/11/chunnooABC-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "น้องหมีเล่นกับพ่อ",
@@ -1290,7 +1368,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/07/lookmeelenkabphor-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "อุ้มช้างเปาหน่อยนะ",
@@ -1306,7 +1385,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/07/aumchangpao-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "เม่นหลบฝน",
@@ -1322,7 +1402,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/1970/01/%E0%B9%80%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%9A-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "มาเตรียมสอบเข้า ป.๑ กันเถอะ",
@@ -1338,7 +1419,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2017/09/pornuang-01-510x510.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "วาดรูปสนุกกับ 8 รูปร่าง รูปทรง",
@@ -1352,7 +1434,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2022/03/1000181868_front_XXXL-510x609.jpg",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 2 ขวบ",
@@ -1369,8 +1452,9 @@
             ""
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath2-01-800x800.png",
-        "hot":"YES",
-        "recommend":""
+        "hot":"",
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 3 ขวบ",
@@ -1384,7 +1468,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath3-01-800x800.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 4 ขวบ",
@@ -1398,7 +1483,8 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2018/02/4-01-01-800x800.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     },
     {
         "name": "สนุกเรียนสนุกเล่น คณิตศาสตร์ อายุ 5 ขวบ",
@@ -1412,6 +1498,7 @@
         ],
         "img":"https://amarinbooks.com/wp-content/uploads/2018/02/PlayStudyMath5-01-800x800.png",
         "hot":"",
-        "recommend":""
+        "recommend":"",
+        "discount": 0
     }
 ]
