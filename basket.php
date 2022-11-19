@@ -23,7 +23,7 @@
     <title>shopping cart</title>
   </head>
   <body>
-  <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center">
+  	<div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center">
         <h1 class="text-center">Book'n Stationery SHOP</h1>
     </div>
 
@@ -37,11 +37,7 @@
     }
 
 	?>
-	<div class="container">
-	
-	</div>
 
-<div class="container-fluid py-4">
 
 	<div class="card">
 		<div class="row">
@@ -123,7 +119,8 @@
 				<button class="basketBUT">ชำระเงิน</button>
 			</div>
 		</div>
-		<div></div>
+		<div>
+
 	</div>
 
 	</div>
@@ -150,3 +147,5 @@
     <script src="./js_file/slider.js"></script>
   </body>
 </html>
+
+

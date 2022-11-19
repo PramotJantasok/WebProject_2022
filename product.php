@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include('server.php');
     $_SESSION['page'] = "product.php?" . "book=" . $_GET['book'];
     error_reporting(0);
 
@@ -132,7 +133,7 @@
             </div>
             <div class="row py-4">
                 <div class="col">
-                <button type="button" class="btn btn-info btn-lg" style="color: #FFF;">หยิบใส่ตะกร้า</button>
+                    <button type="button" class="btn btn-info btn-lg" style="color: #FFF;" onclick="">หยิบใส่ตะกร้า</button>
                 </div>
             </div>
 

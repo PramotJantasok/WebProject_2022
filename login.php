@@ -13,6 +13,9 @@
     }
 
 ?>
+
+
+<head>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
     <div class="col-md-4 col-sm-6 col-lg-7 col-xl-7 col-xxl-7 col-4 n_link">
@@ -21,10 +24,7 @@
       </button>
       <div class="collapse navbar-collapse navbar" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-
-        
           <li><a class="nav-link" href="index.php">หน้าหลัก</a></li>
-
           <li class="dropdown-link"><a class="nav-link">หมวดหนังสือวรรณกรรม <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown">
               <li><a href="love.php">นิยายรัก</a></li>

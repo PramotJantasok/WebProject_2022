@@ -15,6 +15,10 @@
         }
     }
 
+    $url = "./jsonFile/data.json";
+    $response = file_get_contents($url);
+    $DATA = json_decode($response);
+
     // $db = new Basket();
     // $sql = <<<EOF
     // CREATE TABLE basket
@@ -44,5 +48,36 @@
         header('location: ' . $_SESSION['page']);
     }
 
+    function addBasket($id, $username, $product, $index){
+        if (!$id){
+            echo '<script language="javascript">';
+                echo 'alert("กรุณาเข้าสู่ระบบก่อนทำรายการ")';
+            echo '</script>';
+            return null;
+        }
+        $db = new Basket();
+		$sql = "SELECT * from basket";
+		$ret = $db->query($sql);
+        $check = 1;
+		while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+			if ($row['ID'] == $id && $row['USERNAME'] == $username){
+				if ($row['NAMEPRODUCT'] == $product && $row['INDEXJSON'] == $index){
+                    $num = $row['AMOUNT'];
+                    updataAmountBasket($id, $product, $num+1);
+                    return null;
+                }
+			}
+		}
+
+
+	}
+
+
+    function updataAmountBasket($id, $product, $num){
+        $db = new Basket();
+        $sql = "UPDATE basket SET AMOUNT = $num WHERE (ID == $id and NAMEPRODUCT == $product)";
+        $ret = $db->exec($sql);
+        $db->close();
+    }
 
 ?>
