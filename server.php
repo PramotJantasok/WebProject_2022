@@ -53,26 +53,49 @@
         $db = new Basket();
 		$sql = "SELECT * from basket";
 		$ret = $db->query($sql);
-        $check = 1;
+        
 		while($row = $ret->fetchArray(SQLITE3_ASSOC)){
-			if ($row['ID'] == $id && $row['USERNAME'] == $username){
+			if ( $row['USERNAME'] == $username){ //มีอยู่แล้ว
 				if ($row['NAMEPRODUCT'] == $product && $row['INDEXJSON'] == $index){
                     $num = $row['AMOUNT'];
-                    updataAmountBasket($id, $product, $num+1);
+                    $db->close();
+                    updataAmountBasket($id, $product, $num);
                     return null;
                 }
 			}
 		}
-
-
+        
+        $time =  date("Y/m/d:h:i:s");
+        addNewBasket($id, $username, $product, $index, $time);
+        $db->close();
+        header("location: ".$_SESSION['page']);
 	}
+
+    // $time =  date("Y/m/d:h:i:s");
+    // addNewBasket($id, $username, $product, $index, $time);
 
 
     function updataAmountBasket($id, $product, $num){
-        $db = new Basket();
-        $sql = "UPDATE basket SET AMOUNT = $num WHERE (ID == $id and NAMEPRODUCT == $product)";
-        $ret = $db->exec($sql);
-        $db->close();
+        $ADDdb = new Basket();
+        $num = $num+1;
+        $sql = "UPDATE basket SET AMOUNT = $num WHERE (ID = $id and NAMEPRODUCT = '$product')";
+        $ret = $ADDdb->exec($sql);
+        $ADDdb->close();
+        header("location: ".$_SESSION['page']);
     }
+
+    function addNewBasket($id, $username, $product, $index, $time){
+        $openDB = new Basket();
+        $sql =<<<EOF
+            INSERT INTO basket (ID, USERNAME, NAMEPRODUCT, INDEXJSON, AMOUNT, TIME)
+            VALUES($id, '$username', '$product', $index, 1, '$time');
+        EOF;
+        error_reporting(E_ERROR | E_PARSE);
+        $ret = $openDB->exec($sql);
+        $openDB->close();
+        header("location: ".$_SESSION['page']);
+    }
+
+
 
 ?>

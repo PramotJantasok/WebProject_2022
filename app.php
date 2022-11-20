@@ -56,7 +56,7 @@
     <form method="POST" action="app.php">
         <div class="row">
             <div class="col col-1 d-flex">
-                <input class="form-control" type="number" placeholder="KEY ID" name="Del_ID">
+                <input class="form-control" type="number" placeholder="KEY ID" name="Del_ID" required>
             </div>
             <div class="col col-2">
                 <button type="submit" class="btn btn-danger" name="del">Delete</button>
@@ -81,7 +81,42 @@
                 <th scope="col">TIME</th>
                 </tr>
             </thead>
+            <tbody>
+            <?php
+                $basketDB = new Basket();
+                $sql = "SELECT * from basket";
+                $ret = $basketDB->query($sql);
+                while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                    echo "<tr>";
+                    echo "<td>".$row['ID']."</td>";
+                    echo "<td>".$row['USERNAME']."</td>";
+                    echo "<td>".$row['NAMEPRODUCT']."</td>";
+                    echo "<td>".$row['INDEXJSON']."</td>";
+                    echo "<td>".$row['AMOUNT']."</td>";
+                    echo "<td>".$row['TIME']."</td>";
+                    echo "</tr>";
+                }
+            ?>
+
+            </tbody>
         </table>
+        <form method="POST" action="app.php">
+        <div class="row">
+            <div class="col col-1 d-flex">
+                <input class="form-control" type="number" placeholder="KEY ID" name="DelBasket_IDB" required>
+            </div>
+            <div class="col col-4 d-flex">
+                <input class="form-control" type="text" placeholder="KEY NAMEPRODUCT" name="DelBasket_NAMEPRODUCT" required>
+            </div>
+            <div class="col col-2">
+                <button type="submit" class="btn btn-danger" name="delBasket">Delete</button>
+                <button type="reset" class="btn btn-info"><a href="app.php">Reset</a></button>
+            </div>
+            
+        </div>
+        </div>
+    </form>
+
     </div>
 
     
@@ -94,7 +129,22 @@
     if (isset($_POST['del'])){
         $userDB = new Users();
         $delID = $_POST['Del_ID'];
-        $sql = "DELETE from users where ID = $delID;";
+
+        $sql = "DELETE from users where (ID = $delID );";
+        $ret = $userDB->exec($sql);
+        if(!$ret){
+          echo $userDB->lastErrorMsg();
+        } else {
+           echo $userDB->changes(), " Record deleted successfully<br>";
+        }
+        $userDB->close();
+    }
+
+    if (isset($_POST['delBasket'])){
+        $userDB = new Basket();
+        $delID = $_POST['DelBasket_IDB'];
+        $nameProduct = $_POST['DelBasket_NAMEPRODUCT'];
+        $sql = "DELETE from basket where (ID = $delID and NAMEPRODUCT = '$nameProduct');";
         $ret = $userDB->exec($sql);
         if(!$ret){
           echo $userDB->lastErrorMsg();

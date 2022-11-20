@@ -1,9 +1,10 @@
 <?php
     session_start();
     include('server.php');
-    $_SESSION['page'] = "product.php?" . "book=" . $_GET['book'];
-    error_reporting(0);
+    // error_reporting(0);
 
+    $indexGET = $_GET['book'];
+    $_SESSION['page'] = "product.php?" . "book=" . $indexGET;
     $url = "./jsonFile/data.json";
     $response = file_get_contents($url);
     $data = json_decode($response);
@@ -134,10 +135,9 @@
             <div class="row py-4">
                 <div class="col">
                     <?php 
-                    $send = $_SESSION['page'];
-                        echo '<form method="GET" action="'.$send.'">'; 
+                        echo '<form method="POST" action="'.$_SESSION['page'].'">'; 
                     ?>
-                    <button type="submit" class="btn btn-info btn-lg" style="color: #FFF;">หยิบใส่ตะกร้า</button>
+                        <button type="submit" class="btn btn-info btn-lg" style="color: #FFF;" name="addBasket">หยิบใส่ตะกร้า</button>
                     </form>
                 </div>
             </div>
@@ -157,3 +157,13 @@
 </body>
 
 </html>
+
+<?php 
+        if (isset($_POST['addBasket'])){
+            if (!$_SESSION['username']){
+                header('location: '.$_SESSION['page']);
+            }else{
+                addBasket($_SESSION['id'], $_SESSION['username'], $namePage, $indexGET);
+            }
+        }
+?>
