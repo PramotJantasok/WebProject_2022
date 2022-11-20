@@ -49,12 +49,7 @@
     }
 
     function addBasket($id, $username, $product, $index){
-        if (!$id){
-            echo '<script language="javascript">';
-                echo 'alert("กรุณาเข้าสู่ระบบก่อนทำรายการ")';
-            echo '</script>';
-            return null;
-        }
+
         $db = new Basket();
 		$sql = "SELECT * from basket";
 		$ret = $db->query($sql);

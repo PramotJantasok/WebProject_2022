@@ -1,5 +1,6 @@
+
 <?php
-// include('server.php');
+    // include('server.php');
     include('listProduct.php');
     session_start();
     $_SESSION['page'] = "study.php";
@@ -18,9 +19,8 @@
     <link rel='stylesheet' href='css_file/productstyle2.css'/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css_file/index.css">
-    <title>คู่มือเรียน - สอบ</title>
+    <title>คู่มือเรียน-สอบ</title>
     <style id="custom-css" type="text/css">
         .primary.is-outline:hover,
         .badge-inner {
@@ -64,7 +64,6 @@
             font-size: 20px;
             color: black;
             text-align: center;
-            margin-top: 10%;
         }
 
         a {
@@ -82,11 +81,10 @@
 </head>
 
 <body>
-<main id="main" class="">
     <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center">
         <h1 class="text-center">Book'n Stationery SHOP</h1>
     </div>
-        
+
 <?php 
 
     if (!$_SESSION['username'] && !$_SESSION['ID']){
@@ -96,7 +94,9 @@
     }
 
 ?>
+        
 
+<main id="main" class="">
 
     <div class="col large-16">
         <div class="shop-container">

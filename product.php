@@ -133,10 +133,14 @@
             </div>
             <div class="row py-4">
                 <div class="col">
-                    <button type="button" class="btn btn-info btn-lg" style="color: #FFF;" onclick="">หยิบใส่ตะกร้า</button>
+                    <?php 
+                    $send = $_SESSION['page'];
+                        echo '<form method="GET" action="'.$send.'">'; 
+                    ?>
+                    <button type="submit" class="btn btn-info btn-lg" style="color: #FFF;">หยิบใส่ตะกร้า</button>
+                    </form>
                 </div>
             </div>
-
          </div>
         </div>
     </div>
@@ -153,4 +157,3 @@
 </body>
 
 </html>
-

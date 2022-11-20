@@ -3,7 +3,7 @@
     if ($_SESSION['show'] == 1){
       $_SESSION['show'] = '<div class="modals" id="login_popup" style="display: flex;">';
     }else{
-      $_SESSION['show'] = '<div class="modals" id="login_popup"';
+      $_SESSION['show'] = '<div class="modals" id="login_popup">';
     }
 
     if ($_SESSION['Reregis'] == 1){
@@ -13,7 +13,6 @@
     }
 
 ?>
-
 
 <head>
 <nav class="navbar navbar-expand-lg bg-light">
@@ -65,6 +64,9 @@
   </div>
 
 </nav>
+
+
+
 <?php  echo $_SESSION['show'];?>
   <div class="container d-flex justify-content-center">
     <?php echo $_SESSION['Reregis']; ?>

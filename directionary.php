@@ -19,9 +19,10 @@
     <link rel='stylesheet' href='css_file/productstyle2.css'/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css_file/index.css">
+ 
     <title>พจนานุกรม - สารานุกรม</title>
+
     <style id="custom-css" type="text/css">
         .primary.is-outline:hover,
         .badge-inner {

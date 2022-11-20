@@ -1,0 +1,89 @@
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #333;
+}
+
+.popup .ctt {
+    max-height: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+.card {
+    width: 500px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+/* .butt_out {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%
+} */
+
+.name {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.idd {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.idd1 {
+    font-size: 12px
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.butt_out {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px
+}
+.join {
+font-size: 14px;
+color: #a0a0a0;
+font-weight: bold
+}

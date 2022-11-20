@@ -11,14 +11,14 @@ function setList($Group){
             echo '<div class="product-small box ">';
             echo '<div class="box-image">';
             echo '<div class="image">';
-            echo '<a href="product.php?book='. $indexNumber. '" aria-label="">';
+            echo '<a href="product.php?book='. $indexNumber. '" aria-label="" target="_blank">';
             echo '<img src="'. $getBooks->img .'" width="250" height="300" />';
             echo '</a>';
             echo '</div>';
             echo '</div>';
             echo '<div class="box-text box-text-products text-center grid-style-2">';
             echo '<div class="title-wrapper">';
-            echo '<p class="name product-title woocommerce-loop-product__title"><a href="product.php?book='.$indexNumber.'" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
+            echo '<p class="name product-title woocommerce-loop-product__title"><a href="product.php?book='.$indexNumber.'" target="_blank" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">'. $getBooks->name .'</a></p>';
             echo '</div>';
             if ($getBooks->discount > 0){
                 echo '<div class="price-wrapper">';
@@ -55,8 +55,6 @@ function setList($Group){
     $indexNumber += 1;
     }
 }
-
-
 
 
 ?>

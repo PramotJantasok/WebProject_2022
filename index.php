@@ -20,6 +20,7 @@
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css?ver=5.13.3'/>
   <!-- <link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
   <title>Book'n Stationery SHOP</title>
   <style>
     .featured .featured-slider .box .content h3{
