@@ -28,7 +28,31 @@
     color:var(--black);
 }
 .back1{
-  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044291552102600814/unknown.png");
+  background-image: url("https://media.discordapp.net/attachments/604627208476033026/1044305930617102458/Cashbackbook.png?width=1440&height=540");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.back2{
+  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044307543842881586/ad1.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.back3{
+  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044309100730793984/ad2.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.back4{
+  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044313289594777700/ad4.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.back5{
+  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044314892699717776/ad3.png");
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
@@ -79,14 +103,6 @@
 
           <div class="swiper-slide box-img">
             <div class="back5"></div>
-          </div>
-
-          <div class="swiper-slide box-img">
-            <div class="back6"></div>
-          </div>
-
-          <div class="swiper-slide box-img">
-            <div class="back7"></div>
           </div>
         </div>
         <div class="swiper-button-next"></div>
