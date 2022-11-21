@@ -58,14 +58,20 @@
   background-size:cover;
 }
 .slider{
-  height: 88vh;
+  height: 91vh;
   margin-top: 85px;
+}
+.navbarlotto{
+  /* background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044303222417916004/logobook.png"); */
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
 }
   </style>
 </head>
 
 <body>
-  <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center">
+  <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center navbarlotto">
     <h1 class="text-center">Book'n Stationery SHOP</h1>
   </div>
 
