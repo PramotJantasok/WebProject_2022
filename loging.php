@@ -21,6 +21,7 @@
             if (($row['USERNAME'] == $username || $row['EMAIL'] == $username) && $row['PASSWORD'] == $password) {
                 $_SESSION['username'] = $username;
                 $_SESSION['id'] = $row['ID'];
+                $_SESSION['email'] = $row['EMAIL'];
                 break;
             }
             }

@@ -1,5 +1,28 @@
 
+<?php 
+    session_start();
+    include('server.php');
+    if(!$_SESSION['username']){
+        echo "<script>alert('กรุณาเข้าสู่ระบบก่อนทำรายการ');</script>"; 
+    }else{
+        $callDB = new Address();
+        $myAddress = array();
+        $myindexAdress = array();
+        $uesSQL = "SELECT * from address";
+        $respones = $callDB->query($uesSQL);
+        while ($addr = $respones->fetchArray(SQLITE3_ASSOC)){
+            if ($addr['ID'] == $_SESSION['id']){
+                array_push($myAddress, $addr['ADDRESS']);
+                array_push($myindexAdress, $addr['NUMBER']);
+            }
+        }
+        $callDB->close();
+    }
 
+    error_reporting(0);
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +41,7 @@
         }
         .container{
             margin-top: 3%;
+            border-radius: 10px;
         }
         .bill{
             background-color: #E8EAEA;
@@ -31,6 +55,15 @@
             background-color: #FFF;
             border: #AAB0B0 solid 3px;
             border-radius: 10px;
+        }
+        .na:hover{
+            background-color: #2E2E2E;
+            color: #E3E3E3;
+            font-weight: 700;
+            border: #AAB0B0 solid 4px;
+        }
+        .warnig{
+            color: red;
         }
     </style>
 </head>
@@ -55,7 +88,7 @@
         </div>
         <div class="row py-4 ">
             <div class="col">
-                <h1 class="text-center">**กรุณาตรวจสอบสินค้าและราคาก่อนสั่งซื้อ**</h1>
+                <h1 class="text-center warnig">**กรุณาตรวจสอบสินค้าและราคาก่อนสั่งซื้อ**</h1>
             </div>
         </div>
 
@@ -65,66 +98,105 @@
                     <div class="col">
                         <hr>
                         <h4>ข้อมูลผู้ซื้อ</h4>
-                        <p class="py-1">USERNAME: </p>
-                        <p>EMAIL: </p>
+                    <?php echo   '<p class="py-1">USERNAME: '.$_SESSION['username'].'</p>'; ?>
+                    <?php echo   '<p>EMAIL: '.$_SESSION['email'].'</p>'; ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h4>เลือกที่อยู่</h4>
-                        <div class="form-check py-2">
+
+                        <!-- <div class="form-check py-2">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Default radioDefault radioDefault radioDefault radioDefault radioDefault radioDefault radioDefault radioDefault radio
+                            <label class="form-check-label" for="" >
+                                
                             </label>
+                        </div> -->
+                        <div class="row">
+                            <div class="col d-flex">
+                            <button type="button" class="btn btn-primary py-1 me-1" onclick="newAddress()" id="newAddressBTN">เพิ่มที่อยู่ใหม่</button>
+                            <button type="button" class="btn btn-warning py-1" onclick="delAddress()" id="delAddressBTN">ลบที่อยู่</button>
+                            </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary py-1" onclick="newAddress()">เพิ่มที่อยู่ใหม่</button>
                     </div>
                 </div>
                 <br>
-                <form class="row g-1" id="forAddress" style="display: none;">
+                <form class="row g-2" id="forAddress" style="display: none;" method="POST" action="checkout.php">
                     <div class="col-5 me-3">
                         <label for="inputEmail4" class="form-label">ชื่อ</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <input type="text" class="form-control" id="inputEmail4" name="myname" required>
                     </div>
                     <div class="col-5 ">
                         <label for="inputEmail4" class="form-label">นามสกุล</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <input type="text" class="form-control" id="inputEmail4" name ="mylastName" required>
                     </div>
-                    <div class="col-10 py-4">
+                    <div class="col-6 py-4">
+                        <label for="inputEmail4" class="form-label">โทรศัพท์ *</label>
+                        <input type="text" class="form-control" id="inputEmail4" name="phone" required>
+                    </div>
+                    <div class="col-10 py-1">
                         <label for="exampleFormControlTextarea1" class="form-label">บ้านเลขที่ ถนน ซอย *</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="houseNum"></textarea>
                     </div>
                     <div class="col-11 py-4">
                         <label for="inputEmail4" class="form-label">แขวง / ตำบล *</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <input type="text" class="form-control" id="inputEmail4" required name="tumbon">
                     </div>
                     <div class="col-11 ">
                         <label for="inputEmail4" class="form-label">เขต / อำเภอ *</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <input type="text" class="form-control" id="inputEmail4" required name="kat">
                     </div>
                     <div class="col-11 py-4">
                         <label for="inputEmail4" class="form-label">จังหวัด *</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" name="provice" >
                             <option selected>Open this select menu</option>
-                            <option value="1">One</option>
+                            <option value="1">กรุงเทพฯ</option>
                         </select>
                     </div>
                     <div class="col-6 ">
                         <label for="inputEmail4" class="form-label">รหัสไปรษณีย์ *</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
+                        <input type="text" class="form-control" id="inputEmail4" required name="post">
                     </div>
-                    <div class="col-11 py-4">
-                        <label for="inputEmail4" class="form-label">โทรศัพท์ *</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                        <button type="button" class="btn btn-primary ">บันทึก</button>
+                    <div class="row py-4">
+                        <div class="col justify-content-center d-flex py-4">
+                            <button type="submit" class="btn btn-primary me-3" name="saveAddress">บันทึก</button>
+                            <button type="submit" class="btn btn-danger" onclick="cancelNewAddress()">ยกเลิก</button>
                         </div>
                     </div>
                     
+                </form>
+                <form style="display: none;" id="forDelAddress">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">ลำดับ</th>
+                            <th scope="col">รายละอียดที่อยู่</th>
+                            <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            for ($i = 0; $i < count($myAddress); $i++){
+                                echo '<tr>';
+                                echo '<th scope="row">'.$myindexAdress[$i].'</th>';
+                                echo '<td>'.$myAddress[$i].'</td>';
+                                echo '<td>';
+                                echo '<button type="button" class="btn btn-danger py-1 me-1" onclick="" id="newAddressBTN" name="GetDelete">ลบ</button>';
+                                echo '</td>';
+                                echo '</tr>';
+                            }
+ 
+                            ?>
+                            <!-- <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>
+                                <button type="submit" class="btn btn-danger py-1 me-1" onclick="" id="newAddressBTN" name="GetDelete">ลบที่อยู่</button>
+                            </td>
+                            </tr> -->
+                        </tbody>
+                        </table>
+                        <button type="button" class="btn btn-warning py-1" onclick="cancelDelAddress()">ยกเลิก</button>
                 </form>
             </div>
 
@@ -197,8 +269,24 @@
                         <p>รวมทั้งหมด : ฿ 320.00</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: #C9F1C1;">
                     <div class="col">
+                    <h5>เลือกที่อยู่</h5>
+                        <?php 
+                        for ($i = 0; $i < count($myAddress); $i++){
+                            echo '<div class="form-check py-2">';
+                            echo '<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">';
+                            echo '<label class="form-check-label" for="" > '.$myAddress[$i].'';
+                            echo '</label>';
+                            echo '</div>';
+                        }
+
+                        ?>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col">
+                        <h5>เลือกวิธีชำระเงิน</h5>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
@@ -208,9 +296,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col py-4">
+                    <div class="col py-1">
                         <form>
-                            <button type="button" class="btn btn-secondary">สั่งซื้อ</button>  
+                            <button type="submit" class="btn btn-secondary">สั่งซื้อ</button>  
                         </form>
                     </div>
                 </div>
@@ -220,6 +308,16 @@
 </body>
 </html>
 
+<?php 
+    if (isset($_POST['saveAddress'])){
+        $name = $_POST['myname'] ." ". $_POST['mylastName'];
+        $textAddress = $_POST['houseNum']." ".$_POST['tumbon']." ".$_POST['kat']." ".$_POST['provice']. " " . $_POST['post']." เบอร์โทร: ".$_POST['phone'] ." ชื่อผู้รับ: ". $name;
+        newAddress($_SESSION['id'], $_SESSION['username'],$name, $textAddress);
+        echo "<script>alert('บันทึกสำเร็จ');</script>"; 
+        header('location: index.php');
+    }
+?>
+
 
 <script>
     
@@ -227,7 +325,30 @@
 
     function newAddress(){
         let forAddr = document.getElementById('forAddress');
-        forAddr.style.display = 'block';
+        forAddr.style.display = 'flex';
+        document.getElementById('newAddressBTN').style.display = 'none';
     }
 
+    function cancelNewAddress(){
+        document.getElementById('newAddressBTN').style.display = 'flex';
+        let forAddr = document.getElementById('forAddress');
+        forAddr.style.display = 'none';
+
+        document.getElementById('delAddressBTN').style.display ='flex';
+    }
+
+    function delAddress(){
+        let forAddr = document.getElementById('forDelAddress');
+        forAddr.style.display = 'block';
+        document.getElementById('delAddressBTN').style.display = 'none';
+    }
+    function cancelDelAddress(){
+        let forAddr = document.getElementById('forDelAddress');
+        forAddr.style.display = 'none';
+        document.getElementById('delAddressBTN').style.display = 'flex';
+    }
+
+
 </script>
+
+

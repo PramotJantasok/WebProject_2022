@@ -19,15 +19,14 @@
     $response = file_get_contents($url);
     $DATA = json_decode($response);
 
-    // $db = new Basket();
+    // $db = new Address();
     // $sql = <<<EOF
-    // CREATE TABLE basket
+    // CREATE TABLE address
     // (ID INT NOT NULL,
     // USERNAME CHAR(255) NOT NULL,
-    // NAMEPRODUCT TEXT NOT NULL,
-    // INDEXJSON INT NOT NULL,
-    // AMOUNT INT NOT NULL,
-    // TIME CHAR(255) NOT NULL);
+    // NUMBER INT NOT NULL,
+    // NAME TEXT NOT NULL,
+    // ADDRESS TEXT NOT NULL);
     // EOF;
     // $ret = $db->exec($sql);
     // $db->close();
@@ -94,6 +93,25 @@
         $ret = $openDB->exec($sql);
         $openDB->close();
         header("location: ".$_SESSION['page']);
+    }
+
+    function newAddress($id, $username, $name,$textAddress){
+        $DB = new Address();
+        $indexAddr = 0;
+        $sql_qry = "SELECT * from address";
+        $qry = $DB->query($sql_qry);
+        while ($row = $qry->fetchArray(SQLITE3_ASSOC)){
+            if ($id == $row['id']){
+                $indexAddr = $row['indexAddress'];
+            }
+        }
+        ++$indexAddr;
+        $sql =<<<EOF
+            INSERT INTO address (ID, USERNAME, NUMBER, NAME, ADDRESS)
+            VALUES($id, '$username',$indexAddr,'$name', '$textAddress');
+        EOF;
+        $ret = $DB->exec($sql);
+        $DB->close();
     }
 
 
