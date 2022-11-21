@@ -19,7 +19,9 @@
             font-weight: bold;
             text-decoration: none;
             color: #333;
-            cursor: pointer;
+        }
+        .close{
+          cursor: pointer;
         }
 
         .popup .close:hover {
@@ -44,7 +46,7 @@
             width: 500px;
             background-color: #efefef;
             border: none;
-            cursor: pointer;
+            /* cursor: pointer; */
         }
 
         .profile {
@@ -145,8 +147,8 @@
 
 
 <div class="modals" id="login_popup">
-  <!-- <div class="container d-flex justify-content-center"> -->
-    <!-- <div class="contents justify-content-center"> -->
+  <div class="container d-flex justify-content-center">
+    <div class="contents justify-content-center">
         <div class="popup">
             <h3>My Profile</h3>
             <a class="close" onclick="closePup()" >&times;</a>
@@ -173,8 +175,8 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
-  <!-- </div> -->
+    </div>
+  </div>
 </div>
 
 

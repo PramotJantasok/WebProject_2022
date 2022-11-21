@@ -1,7 +1,7 @@
 <?php
     session_start();
     include('server.php');
-    // error_reporting(0);
+    error_reporting(0);
 
     $indexGET = $_GET['book'];
     $_SESSION['page'] = "product.php?" . "book=" . $indexGET;
@@ -161,9 +161,10 @@
 <?php 
         if (isset($_POST['addBasket'])){
             if (!$_SESSION['username']){
-                header('location: '.$_SESSION['page']);
+                echo "<script>alert('กรุณาเข้าสู่ระบบก่อนทำรายการ');</script>"; 
             }else{
                 addBasket($_SESSION['id'], $_SESSION['username'], $namePage, $indexGET);
+                echo "<script>alert('เพิ่มสินค้าเรียบร้อย');</script>"; 
             }
         }
 ?>
