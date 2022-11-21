@@ -163,8 +163,12 @@
             if (!$_SESSION['username']){
                 echo "<script>alert('กรุณาเข้าสู่ระบบก่อนทำรายการ');</script>"; 
             }else{
-                addBasket($_SESSION['id'], $_SESSION['username'], $namePage, $indexGET);
-                echo "<script>alert('เพิ่มสินค้าเรียบร้อย');</script>"; 
+                if ($Discount != 0){
+                    addBasket($_SESSION['id'], $_SESSION['username'],$namePage,$Discount, $indexGET);
+                }else{
+                    addBasket($_SESSION['id'], $_SESSION['username'],$namePage,$Price, $indexGET); 
+                }
+
             }
         }
 ?>

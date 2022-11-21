@@ -1,6 +1,5 @@
 
 <?php 
-    session_start();
     include('server.php');
     if(!$_SESSION['username']){
         echo "<script>alert('กรุณาเข้าสู่ระบบก่อนทำรายการ');</script>"; 
@@ -18,7 +17,7 @@
         }
         $callDB->close();
     }
-
+    $_SESSION['sum'] = 0;
     error_reporting(0);
 
 
@@ -121,7 +120,7 @@
                     </div>
                 </div>
                 <br>
-                <form class="row g-2" id="forAddress" style="display: none;" method="POST" action="checkout.php">
+                <form class="row g-2" id="forAddress" style="display: none;" method="POST" action="server.php">
                     <div class="col-5 me-3">
                         <label for="inputEmail4" class="form-label">ชื่อ</label>
                         <input type="text" class="form-control" id="inputEmail4" name="myname" required>
@@ -149,9 +148,85 @@
                     <div class="col-11 py-4">
                         <label for="inputEmail4" class="form-label">จังหวัด *</label>
                         <select class="form-select" aria-label="Default select example" name="provice" >
-                            <option selected>Open this select menu</option>
-                            <option value="1">กรุงเทพฯ</option>
-                        </select>
+                            <option value="null" selected>เลือกจังหวัด</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                            <option value="กระบี่">กระบี่ </option>
+                            <option value="กาญจนบุรี">กาญจนบุรี </option>
+                            <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                            <option value="กำแพงเพชร">กำแพงเพชร </option>
+                            <option value="ขอนแก่น">ขอนแก่น</option>
+                            <option value="จันทบุรี">จันทบุรี</option>
+                            <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                            <option value="ชัยนาท">ชัยนาท </option>
+                            <option value="ชัยภูมิ">ชัยภูมิ </option>
+                            <option value="ชุมพร">ชุมพร </option>
+                            <option value="ชลบุรี">ชลบุรี </option>
+                            <option value="เชียงใหม่">เชียงใหม่ </option>
+                            <option value="เชียงราย">เชียงราย </option>
+                            <option value="ตรัง">ตรัง </option>
+                            <option value="ตราด">ตราด </option>
+                            <option value="ตาก">ตาก </option>
+                            <option value="นครนายก">นครนายก </option>
+                            <option value="นครปฐม">นครปฐม </option>
+                            <option value="นครพนม">นครพนม </option>
+                            <option value="นครราชสีมา">นครราชสีมา </option>
+                            <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                            <option value="นครสวรรค์">นครสวรรค์ </option>
+                            <option value="นราธิวาส">นราธิวาส </option>
+                            <option value="น่าน">น่าน </option>
+                            <option value="นนทบุรี">นนทบุรี </option>
+                            <option value="บึงกาฬ">บึงกาฬ</option>
+                            <option value="บุรีรัมย์">บุรีรัมย์</option>
+                            <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                            <option value="ปทุมธานี">ปทุมธานี </option>
+                            <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                            <option value="ปัตตานี">ปัตตานี </option>
+                            <option value="พะเยา">พะเยา </option>
+                            <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                            <option value="พังงา">พังงา </option>
+                            <option value="พิจิตร">พิจิตร </option>
+                            <option value="พิษณุโลก">พิษณุโลก </option>
+                            <option value="เพชรบุรี">เพชรบุรี </option>
+                            <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                            <option value="แพร่">แพร่ </option>
+                            <option value="พัทลุง">พัทลุง </option>
+                            <option value="ภูเก็ต">ภูเก็ต </option>
+                            <option value="มหาสารคาม">มหาสารคาม </option>
+                            <option value="มุกดาหาร">มุกดาหาร </option>
+                            <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                            <option value="ยโสธร">ยโสธร </option>
+                            <option value="ยะลา">ยะลา </option>
+                            <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                            <option value="ระนอง">ระนอง </option>
+                            <option value="ระยอง">ระยอง </option>
+                            <option value="ราชบุรี">ราชบุรี</option>
+                            <option value="ลพบุรี">ลพบุรี </option>
+                            <option value="ลำปาง">ลำปาง </option>
+                            <option value="ลำพูน">ลำพูน </option>
+                            <option value="เลย">เลย </option>
+                            <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                            <option value="สกลนคร">สกลนคร</option>
+                            <option value="สงขลา">สงขลา </option>
+                            <option value="สมุทรสาคร">สมุทรสาคร </option>
+                            <option value="สมุทรปราการ">สมุทรปราการ </option>
+                            <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                            <option value="สระแก้ว">สระแก้ว </option>
+                            <option value="สระบุรี">สระบุรี </option>
+                            <option value="สิงห์บุรี">สิงห์บุรี </option>
+                            <option value="สุโขทัย">สุโขทัย </option>
+                            <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                            <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                            <option value="สุรินทร์">สุรินทร์ </option>
+                            <option value="สตูล">สตูล </option>
+                            <option value="หนองคาย">หนองคาย </option>
+                            <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                            <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                            <option value="อุดรธานี">อุดรธานี </option>
+                            <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                            <option value="อุทัยธานี">อุทัยธานี </option>
+                            <option value="อุบลราชธานี">อุบลราชธานี</option>
+                            <option value="อ่างทอง">อ่างทอง </option>
+                            </select>
                     </div>
                     <div class="col-6 ">
                         <label for="inputEmail4" class="form-label">รหัสไปรษณีย์ *</label>
@@ -199,7 +274,14 @@
                         <button type="button" class="btn btn-warning py-1" onclick="cancelDelAddress()">ยกเลิก</button>
                 </form>
             </div>
-
+            
+            <?php
+            $myBasket = array();
+                $myBasketDB = new Basket();
+                $basketSQL = "SELECT * from basket";
+                $responesBasket = $myBasketDB->query($basketSQL);
+                
+            ?>
 
 
             <div class="col bill">
@@ -218,18 +300,25 @@
                                 <th scope="col ">ราคา</th>
                             </thead>
                             <tbody>
-                                <tr>
-                                <th scope="row">1</th>
-                                <td>เตรียมสอบเข้ม เข้า ม.4 ครบ 5 วิชาหลัก มั่นใจเต็ม 100</td>
-                                <td> &nbsp; x 1</td>
-                                <td>฿ 320.00</td>
-                                </tr>
-                                
+                                <?php
+                                $i = 1;
+                                $sum = 0;
+                                $amount =0;
+                                    while($row = $responesBasket->fetchArray(SQLITE3_ASSOC)){
+                                        $price = $row['PRICE']*$row['AMOUNT']; $sum += $price;
+                                        echo '<tr>';
+                                        echo '<th scope="row">'.$i.'</th>'; ++$i;
+                                        echo '<td>'.$row['NAMEPRODUCT'].'</td>';
+                                        echo '<td> &nbsp; x '.$row['AMOUNT'].'</td>'; $amount += $row['AMOUNT'];
+                                        echo '<td>฿ '.number_format($price,2,'.','').'</td>';
+                                        echo '</tr>';
+                                    }
+                                ?>             
                                 <tr class="color">
                                 <th scope="row">รวม</th>
                                 <td></td>
-                                <td> &nbsp; x 1</td>
-                                <td>฿ 320.00</td>
+                                <?php echo '<td> &nbsp; x '.$amount.'</td>' ?>
+                                <?php echo '<td>฿ '.number_format($sum,2,'.','').'</td>' ?>
                                 </tr>
                             </tbody>
                         </table>
@@ -239,8 +328,8 @@
                     <h5>การจัดส่ง</h5>
                     <div class="col">
                         <div class="plans">
-                            <label class="plan basic-plan" for="basic">
-                                <input checked type="radio" name="plan" id="basic" />
+                            <label class="plan basic-plan" for="basic" onclick="pus()">
+                                <?php echo '<input checked type="radio" name="plan" id="dive1" value="'. $sum+30 .'" />'; ?>
                                 <div class="plan-content">
                                     <!-- <img loading="lazy" src="https://e1.pngegg.com/pngimages/261/364/png-clipart-boite-aux-lettres-rose-boite-aux-lettres-mail.png" alt="" /> -->
                                     <div class="plan-details">
@@ -250,8 +339,8 @@
                                 </div>
                             </label>
 
-                            <label class="plan complete-plan py-2" for="complete">
-                                <input type="radio" id="complete" name="plan" />
+                            <label class="plan complete-plan py-2" for="complete" onclick="pus1()">
+                            <?php  echo '<input type="radio" id="dive2" name="plan" type="submit" value="'. $sum+50 .'" />' ?>
                                 <div class="plan-content">
                                     <!-- <img loading="lazy" src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/potted-plant-img.svg" alt="" /> -->
                                     <div class="plan-details">
@@ -264,15 +353,22 @@
                     </div>
                     
                 </div>
+                
                 <div class="row">
                     <div class="col d-flex">
-                        <p>รวมทั้งหมด : ฿ 320.00</p>
+                        <?php
+                        $allSum = $sum+30; 
+                            echo '<p for="'.$allSum.'" id="realPrice"> รวมทั้งหมด : ฿ '.$allSum.'</p>';
+                        ?>
                     </div>
-                </div>
+                </div>        
                 <div class="row" style="background-color: #C9F1C1;">
                     <div class="col">
                     <h5>เลือกที่อยู่</h5>
                         <?php 
+                        if (count($myAddress) == 0){
+                            echo '<p>ไม่มีที่อยู๋ </p>';
+                        }
                         for ($i = 0; $i < count($myAddress); $i++){
                             echo '<div class="form-check py-2">';
                             echo '<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">';
@@ -288,7 +384,7 @@
                     <div class="col">
                         <h5>เลือกวิธีชำระเงิน</h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                             <label class="form-check-label" for="flexRadioDefault1">
                                 เก็บเงินปลายทาง
                             </label>
@@ -297,8 +393,8 @@
                 </div>
                 <div class="row">
                     <div class="col py-1">
-                        <form>
-                            <button type="submit" class="btn btn-secondary">สั่งซื้อ</button>  
+                        <form action="checkout.php" method="POST">
+                            <button type="submit" class="btn btn-secondary" name="buy">สั่งซื้อ</button>
                         </form>
                     </div>
                 </div>
@@ -309,13 +405,7 @@
 </html>
 
 <?php 
-    if (isset($_POST['saveAddress'])){
-        $name = $_POST['myname'] ." ". $_POST['mylastName'];
-        $textAddress = $_POST['houseNum']." ".$_POST['tumbon']." ".$_POST['kat']." ".$_POST['provice']. " " . $_POST['post']." เบอร์โทร: ".$_POST['phone'] ." ชื่อผู้รับ: ". $name;
-        newAddress($_SESSION['id'], $_SESSION['username'],$name, $textAddress);
-        echo "<script>alert('บันทึกสำเร็จ');</script>"; 
-        header('location: index.php');
-    }
+
 ?>
 
 
@@ -327,6 +417,7 @@
         let forAddr = document.getElementById('forAddress');
         forAddr.style.display = 'flex';
         document.getElementById('newAddressBTN').style.display = 'none';
+        document.getElementById('delAddressBTN').style.display = 'none';
     }
 
     function cancelNewAddress(){
@@ -341,14 +432,36 @@
         let forAddr = document.getElementById('forDelAddress');
         forAddr.style.display = 'block';
         document.getElementById('delAddressBTN').style.display = 'none';
+        document.getElementById('newAddressBTN').style.display = 'none';
     }
     function cancelDelAddress(){
         let forAddr = document.getElementById('forDelAddress');
         forAddr.style.display = 'none';
         document.getElementById('delAddressBTN').style.display = 'flex';
+        document.getElementById('newAddressBTN').style.display = 'flex';
     }
+
+    function pus(){
+        document.getElementById('realPrice').innerHTML = "รวมทั้งหมด : ฿ " + document.getElementById('dive1').value;
+        document.getElementById('dive2').checked = false;
+        document.getElementById('dive1').checked = true;
+   }
+
+   function pus1(){
+        document.getElementById('realPrice').innerHTML = "รวมทั้งหมด : ฿ " + document.getElementById('dive2').value;
+        document.getElementById('dive1').checked = false;
+        document.getElementById('dive2').checked = true;
+   }
 
 
 </script>
+
+<?php 
+        if (isset($_POST['buy'])){
+            echo "<script>alert('สั่งซื้อสำเร็จ');</script>";
+        }
+?>
+
+
 
 

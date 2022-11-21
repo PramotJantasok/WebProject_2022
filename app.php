@@ -77,6 +77,7 @@
                     <th scope="col">ID</th>
                     <th scope="col">USERNAME</th>
                     <th scope="col">PRODUCT</th>
+                    <th scope="col">PRICE</th>
                     <th scope="col">INDEX</th>
                     <th scope="col">AMOUNT</th>
                     <th scope="col">TIME</th>
@@ -92,6 +93,7 @@
                             echo "<td>".$row['ID']."</td>";
                             echo "<td>".$row['USERNAME']."</td>";
                             echo "<td>".$row['NAMEPRODUCT']."</td>";
+                            echo "<td>".$row['PRICE']."</td>";
                             echo "<td>".$row['INDEXJSON']."</td>";
                             echo "<td>".$row['AMOUNT']."</td>";
                             echo "<td>".$row['TIME']."</td>";
@@ -148,7 +150,7 @@
                 </tbody>
                 
             </table>
-            <form>
+            <form action="app.php" method="POST">
             <div class="row">
                     <div class="col col-1 d-flex">
                         <input class="form-control" type="number" placeholder="KEY ID" name="DelAddr_IDB" required>
@@ -165,8 +167,14 @@
             </form>
         </div>
 
-    
-
+    <br><br><br><br><br><br><br>
+        <div class="container bg-info py-4">
+            <div class="row">
+                <div class="col">
+                    <h1>FOOTER</h1>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
 
@@ -204,7 +212,7 @@
         $userDB = new Address();
         $delID = $_POST['DelAddr_IDB'];
         $indexAddr = $_POST['DelAddr_index'];
-        $sql = "DELETE from address where (ID = $delID);";
+        $sql = "DELETE from address where (ID = $delID and NUMBER=$indexAddr);";
         $ret = $userDB->exec($sql);
         if(!$ret){
           echo $userDB->lastErrorMsg();

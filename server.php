@@ -1,4 +1,6 @@
 <?php
+session_start();
+error_reporting(0);  
     class Users extends SQLite3 {
         function __construct() {
            $this->open('database/Users.db');
@@ -31,6 +33,21 @@
     // $ret = $db->exec($sql);
     // $db->close();
 
+
+    // $db = new Basket();
+    // $sql = <<<EOF
+    // CREATE TABLE basket
+    // (ID INT NOT NULL,
+    // USERNAME CHAR(255) NOT NULL,
+    // NAMEPRODUCT TEXT NOT NULL,
+    // PRICE REAL NOT NULL,
+    // INDEXJSON INT NOT NULL,
+    // AMOUNT INT NOT NULL,
+    // TIME CHAR(255) NOT NULL);
+    // EOF;
+    // $ret = $db->exec($sql);
+    // $db->close();
+
     // $userDB = new Users();
     // $sql = "UPDATE `sqlite_sequence` SET `seq` = 0 WHERE `name` = 'users';";
     // $ret = $userDB->exec($sql);
@@ -47,7 +64,7 @@
         header('location: ' . $_SESSION['page']);
     }
 
-    function addBasket($id, $username, $product, $index){
+    function addBasket($id, $username, $product,$price, $index){
 
         $db = new Basket();
 		$sql = "SELECT * from basket";
@@ -65,7 +82,7 @@
 		}
         
         $time =  date("Y/m/d:h:i:s");
-        addNewBasket($id, $username, $product, $index, $time);
+        addNewBasket($id, $username, $product,$price, $index, $time);
         $db->close();
         header("location: ".$_SESSION['page']);
 	}
@@ -83,11 +100,11 @@
         header("location: ".$_SESSION['page']);
     }
 
-    function addNewBasket($id, $username, $product, $index, $time){
+    function addNewBasket($id, $username, $product,$price, $index, $time){
         $openDB = new Basket();
         $sql =<<<EOF
-            INSERT INTO basket (ID, USERNAME, NAMEPRODUCT, INDEXJSON, AMOUNT, TIME)
-            VALUES($id, '$username', '$product', $index, 1, '$time');
+            INSERT INTO basket (ID, USERNAME, NAMEPRODUCT,PRICE, INDEXJSON, AMOUNT, TIME)
+            VALUES($id, '$username', '$product',$price, $index ,1, '$time');
         EOF;
         error_reporting(E_ERROR | E_PARSE);
         $ret = $openDB->exec($sql);
@@ -101,11 +118,16 @@
         $sql_qry = "SELECT * from address";
         $qry = $DB->query($sql_qry);
         while ($row = $qry->fetchArray(SQLITE3_ASSOC)){
-            if ($id == $row['id']){
-                $indexAddr = $row['indexAddress'];
+            if ($id == $row['ID']){
+                $indexAddr = $row['NUMBER'];
+            }
+            if ($row['ADDRESS'] == $textAddress && $row['ID'] == $id){
+                $DB->close();
+                return null;
             }
         }
-        ++$indexAddr;
+        
+        $indexAddr = $indexAddr+1;
         $sql =<<<EOF
             INSERT INTO address (ID, USERNAME, NUMBER, NAME, ADDRESS)
             VALUES($id, '$username',$indexAddr,'$name', '$textAddress');
@@ -115,5 +137,11 @@
     }
 
 
+    if (isset($_POST['saveAddress'])){
+        $name = $_POST['myname'] ." ". $_POST['mylastName'];
+        $textAddress = $_POST['houseNum']." ".$_POST['tumbon']." ".$_POST['kat']." ".$_POST['provice']. " " . $_POST['post']." เบอร์โทร: ".$_POST['phone'] ." ชื่อผู้รับ: ". $name;
+        newAddress($_SESSION['id'], $_SESSION['username'],$name, $textAddress);
+        header('location: checkout.php');
+    }
 
 ?>
