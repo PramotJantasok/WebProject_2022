@@ -23,10 +23,17 @@
 
   <title>Book'n Stationery SHOP</title>
   <style>
-    .featured .featured-slider .box .content h3{
+  .featured .featured-slider .box .content h3{
     font-size: 1rem;
     color:var(--black);
 }
+.form-control .box1{
+    background: white;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
   </style>
 </head>
 

@@ -15,6 +15,81 @@
 ?>
 
 <head>
+<style>
+  .outbox{
+    position: relative;
+  }
+  .userbox{
+    position: relative;
+  }
+  .box0{
+    position: relative;
+  }
+  .box1{
+    position: relative;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+  }
+  .inbox1{
+    top: 32px;
+    left: 0px;
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .inbox2{
+    top: 7px;
+    left: 0px;
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .inbox3{
+    top: 55px;
+    left: 13px;
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .userbox input:focus ~ label,
+  .userbox input:valid ~ label {
+  top:-6px;
+  left: 0;
+  color: #000;
+  font-size: 18px;
+}
+  .userbox2 input:focus ~ label,
+  .userbox2 input:valid ~ label {
+  top:-30px;
+  left: 0;
+  color: #000;
+  font-size: 18px;
+}
+  .userbox3 input:focus ~ label,
+  .userbox3 input:valid ~ label {
+  top:20px;
+  left: 12px;
+  color: #000;
+  font-size: 18px;
+}
+.btncolor{
+  background:#149f8e;
+  border-color:#149f8e;
+}
+.btncolor:hover{
+  background:#0f796c ;
+  border-color:#0f796c ;
+}
+</style>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
     <div class="col-md-4 col-sm-6 col-lg-7 col-xl-7 col-xxl-7 col-4 n_link">
@@ -57,8 +132,8 @@
         <button class="btn btn-outline-success me-3" type="submit"><i class="bi bi-search"></i></button>
       </form>
       <button class="btn btn-primary me-1"><i class="bi bi-cart3"></i></button>
-      <button class="btn btn-primary" id="show" onclick="popup()"><i class="bi bi-person-circle">
-          &nbsp;เข้าสู่ระบบ
+      <button class="btn btn-primary " id="show" onclick="popup()"><i class="bi bi-person-circle">
+          &nbsp;Login
         </i></button>
     </div>
   </div>
@@ -76,35 +151,41 @@
             <button type="button" class="btn-close" id="close" onclick="closePup()"></button>
           </div>
           <div class="row">
-            <h1>เข้าสู่ระบบ</h1>
+            <h1>Login</h1>
             <div class="col">
               <div class="row">
-                <div class="col">
+                <div class="col outbox">
                   <br>
-                  <label for="username" class="form-label">ชื่อผู้ใช้ หรือ อีเมล:</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="Login_username" required>
+                  <div class="userbox">
+                  <label for="username" class="form-label box0"></label>
+                  <input type="text" class="form-control box1" id="exampleFormControlInput1" placeholder="" name="Login_username" required>
+                  <label for="" class="inbox1">Username</label>
+                  </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col outbox">
+                <div class="userbox2">
                   <br>
-                  <label for="setPassword" class="form-label">รหัสผ่าน:</label>
+                  <label for="setPassword" class="form-label box0"></label>
                   <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="" id="login_pass" name="Login_password" required>
+                    <input type="password" class="form-control box1" placeholder="" id="login_pass" name="Login_password" required>
+                    <label for="" class="inbox2">Password</label>
                     <button class="input-group-text" type="button" id="login_see" onclick="seePassword_login()" value="0">
                       <i class="bi bi-eye-slash" id="login_icon_see"></i></button>
                   </div>
-                  <a href="#">ลืมรหัสผ่าน?</a>
+                  </div>
+                  <a href="#">forgot Password</a>
                 </div>
               </div>
               <div class="row py-4">
                 <div class="d-grid gap-2 col mx-auto">
-                  <button class="btn btn-primary" type="submit" name="Login_Submit">เข้าสู่ระบบ</button>
+                  <button class="btn btn-primary btncolor" type="submit" name="Login_Submit">Login</button>
                 </div>
               </div>
               <div class="row">
                 <div class="col login_signUp text-center">
-                  <p>ยังไม่ได้เป็นสมาชิก? <a href="#" class="signUp-link">สมัครสมาชิก</a></p>
+                  <p>Not a Member? <a href="#" class="signUp-link">Register</a></p>
                 </div>
               </div>
             </div>
@@ -116,47 +197,56 @@
             <button type="button" class="btn-close" onclick="closePup()" aria-label="Close"></button>
           </div>
           <div class="row">
-            <h1>ลงทะเบียน</h1>
+            <h1>Register</h1>
             <div class="col">
               <div class="row">
-                <div class="col">
-                  <label for="username" class="form-label">ชื่อผู้ใช้:</label>
-                  <input type="text" class="form-control" id="a" placeholder="" name="UserRegister" required>
+                <div class="col outbox">
+                <div class="userbox">
+                  <label for="username" class="form-label box0"></label>
+                  <input type="text" class="form-control box1" id="a" placeholder="" name="UserRegister" required>
+                  <label for="" class="inbox1">Username</label>
+                </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col outbox">
+                <div class="userbox3">
                   <br>
-                  <label for="email" class="form-label">อีเมล:</label>
-                  <input type="email" class="form-control" id="b" placeholder="" name="EmailRegister" required>
+                  <label for="email" class="form-label box0"></label>
+                  <input type="email" class="form-control box1" id="b" placeholder="" name="EmailRegister" required>
+                  <label for="" class="inbox3">E-mail</label>
+                </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                <div class="col outbox">
+                <div class="userbox2">
                   <br>
-                  <label for="setPassword" class="form-label">รหัสผ่าน:</label>
+                  <label for="setPassword" class="form-label box0"></label>
                   <div class="input-group mb-3">
-                    <input type="password" class="form-control" placeholder="" aria-label="Password" id="regis_pass" name="PasswordRegister" required>
+                    <input type="password" class="form-control box1" placeholder="" aria-label="Password" id="regis_pass" name="PasswordRegister" required>
+                    <label for="" class="inbox2">Password</label>
                     <button class="input-group-text" type="button" id="see" onclick="seePassword()" value="0">
                       <i class="bi bi-eye-slash" id="icon_see"></i></button>
+                  </div>
                   </div>
                 </div>
               </div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                 <label class="form-check-label" for="flexCheckDefault">
-                  ตรวจสอบข้อมูลเเล้ว
+                  Confirm
                 </label>
               </div>
 
               <div class="row py-4">
                 <div class="d-grid gap-2 col mx-auto">
-                  <button class="btn btn-primary" type="submit" name="Register_submit" id="Register_Button">ลงทะเบียน</button>
+                  <button class="btn btn-primary btncolor" type="submit" name="Register_submit" id="Register_Button">Register</button>
                 </div>
               </div>
               <div class="row">
                 <div class="col signUp_signIn">
-                  <p>ฉันเป็นสมาชิกเเล้ว? <a href="#" class="signIn-link">เข้าสู่ระบบ</a></p>
+                  <p>I have Member? <a href="#" class="signIn-link">Login</a></p>
                 </div>
               </div>
             </div>
