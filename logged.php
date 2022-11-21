@@ -1,11 +1,11 @@
 <head>
     <style>
         .popup {
-            margin: 70px auto;
             padding: 20px;
             background: #fff;
             border-radius: 5px;
-            width: 30%;
+            width: 100%;
+            height:100%;
             position: relative;
             transition: all 0.5s ease-in-out;
         }
