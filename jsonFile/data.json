@@ -109,7 +109,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 180
     },
     {
         "name":"ลิขิตรักข้ามปรภพ",
@@ -144,7 +144,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 250
     },
 
     {   
@@ -164,7 +164,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 250
     },
     {
         "name": "มุมมองนักกอ่านหระเจ้า เล่ม 4",
@@ -197,7 +197,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 250
     },
     {
         "name": "มุมมองนักอ่านพระเจ้า เล่ม 6",
@@ -268,7 +268,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 300
     },
 
     {
@@ -303,7 +303,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 300
     },    
 
     {
@@ -366,7 +366,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 270
     },
 
     {
@@ -451,7 +451,7 @@
         "hot":"",
         "recommend":"",
         "Promotion":"YES",
-        "discount": 0
+        "discount": 250
     },
     {
         "name": "คุณนั่นแหละ…ฆาตกร",

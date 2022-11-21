@@ -27,13 +27,16 @@
     font-size: 1rem;
     color:var(--black);
 }
-.form-control .box1{
-    background: white;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
+.back1{
+  background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044291552102600814/unknown.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+.slider{
+  height: 88vh;
+  margin-top: 85px;
+}
   </style>
 </head>
 
@@ -57,7 +60,9 @@
       <div class="swiper mySwiper inbox">
         <div class="swiper-wrapper">
           <div class="swiper-slide box-img">
-            <div class="back1"></div>
+            <div class="back1">
+              <img src="" alt="">
+            </div>
           </div>
 
           <div class="swiper-slide box-img">
@@ -106,7 +111,7 @@
                     if ($getBooks->recommend == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
-                          echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
+                          echo '<img src="' .$getBooks->img. '" width="300" height="320" />';
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
@@ -140,7 +145,7 @@
                     if ($getBooks->hot == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
-                          echo '<img src="' .$getBooks->img. '" width="250" height="300" />';
+                          echo '<img src="' .$getBooks->img. '" width="300" height="320" />';
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3 maxlength="10">' . $getBooks->name . '</h3>';
@@ -188,7 +193,7 @@
                     if ($getBooks->Promotion == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
-                          echo '<a href="product.php?book='.$i.'"><img src="' .$getBooks->img. '" width="250" height="300" /></a>';
+                          echo '<a href="product.php?book='.$i.'"><img src="' .$getBooks->img. '" width="300" height="320" /></a>';
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
