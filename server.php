@@ -144,4 +144,90 @@ error_reporting(0);
         header('location: checkout.php');
     }
 
+
+    function deleteAdress($id, $number){
+        $db = new Address();
+        $sqlDel = "DELETE from address WHERE (ID = $id and NUMBER = $number)";
+        $ret = $db->exec($sqlDel);
+        $db->close();
+    }
+
+    if (isset($_POST['GetDelete'])){
+        deleteAdress($_SESSION['id'], $_POST['GetDelete']);
+        header("location: checkout.php");
+    }
+
+    $urlCoupon = "./jsonFile/coupon.json";
+    $response = file_get_contents($url);
+    $copun = json_decode($response);
+    
+    if (isset($_POST['coopong'])){
+        $Code = $_POST['mycode'];
+        if ($Code == "ITKMITL"){
+            $_SESSION['coupon'] = 40;
+            $_SESSION['haveCou'] = 40;
+            header('location: basket.php');
+        }else{
+            header('location: basket.php');
+        }
+
+    }
+
+    if (isset($_POST['addBook'])){
+        $mydb = new Basket();
+        $id = $_SESSION['id'];
+        $index = $_POST['addBook'];
+        $sqlnum = "SELECT * from basket";
+        $numRet = $mydb->query($sqlnum);
+        $num = 0;
+        while($row = $numRet->fetchArray(SQLITE3_ASSOC)){
+            if ($row['ID'] == $_SESSION['id'] && $row['INDEXJSON'] == $index){
+                $num = $row['AMOUNT'];
+            }
+        }
+        ++$num;
+        $sql = "UPDATE basket SET AMOUNT = $num WHERE (ID = $id and INDEXJSON = $index)";
+        $ret = $mydb->exec($sql);
+        $mydb->close();
+        header('location: basket.php');
+    
+    }
+
+    if (isset($_POST['subBook'])){
+        $mydb = new Basket();
+        $id = $_SESSION['id'];
+        $index = $_POST['subBook'];
+        $sqlnum = "SELECT * from basket";
+        $numRet = $mydb->query($sqlnum);
+        $num = 0;
+        while($row = $numRet->fetchArray(SQLITE3_ASSOC)){
+            if ($row['ID'] == $_SESSION['id'] && $row['INDEXJSON'] == $index){
+                $num = $row['AMOUNT'];
+            }
+        }
+        if ($num > 1){
+            --$num;
+            $sql = "UPDATE basket SET AMOUNT = $num WHERE (ID = $id and INDEXJSON = $index)";
+            $ret = $mydb->exec($sql);
+            $mydb->close();
+            header('location: basket.php');
+        }else{
+            $mydb->close();
+            header('location: basket.php');
+        }
+    }
+
+    if(isset($_POST['deleteBasket'])){
+        $userDB = new Basket();
+        $delID = $_SESSION['id'];
+        $indexProduct = $_POST['deleteBasket'];
+        $sql = "DELETE from basket where (ID = $delID and INDEXJSON = $indexProduct);";
+        $ret = $userDB->exec($sql);
+        if(!$ret){
+          echo $userDB->lastErrorMsg();
+        }
+        $userDB->close();
+        header('location: basket.php');
+    }
+
 ?>

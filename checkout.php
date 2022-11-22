@@ -1,6 +1,7 @@
 
 <?php 
     include('server.php');
+    session_start();
     if(!$_SESSION['username']){
         echo "<script>alert('กรุณาเข้าสู่ระบบก่อนทำรายการ');</script>"; 
     }else{
@@ -26,6 +27,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <META http-equiv="expires" content="0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,10 +79,10 @@
             <div class="col">
                 <ul class="nav justify-content-center">
                     <li class="nav-item me-2 py-2">
-                        <a class="nav-link na" href="#"><i class="bi bi-cart2"></i> SHOPPING CART</a>
+                        <a class="nav-link na" href="basket.php"><i class="bi bi-cart2"></i> SHOPPING CART</a>
                     </li>
                     <li class="nav-item py-2">
-                        <a class="nav-link na" href="#"><i class="bi bi-currency-bitcoin"></i> CHECKOUT DETAILS</a>
+                        <a class="nav-link na" href="checkout.php"><i class="bi bi-currency-bitcoin"></i> CHECKOUT DETAILS</a>
                     </li>
                 </ul>
             </div>
@@ -240,7 +242,7 @@
                     </div>
                     
                 </form>
-                <form style="display: none;" id="forDelAddress">
+                <form style="display: none;" id="forDelAddress" action="server.php" method="POST" >
                     <table class="table">
                         <thead>
                             <tr>
@@ -256,7 +258,7 @@
                                 echo '<th scope="row">'.$myindexAdress[$i].'</th>';
                                 echo '<td>'.$myAddress[$i].'</td>';
                                 echo '<td>';
-                                echo '<button type="button" class="btn btn-danger py-1 me-1" onclick="" id="newAddressBTN" name="GetDelete">ลบ</button>';
+                                echo '<button type="submit" class="btn btn-danger py-1 me-1" onclick="" id="newAddressBTN" name="GetDelete" value='. $myindexAdress[$i] .'>ลบ</button>';
                                 echo '</td>';
                                 echo '</tr>';
                             }
@@ -357,8 +359,8 @@
                 <div class="row">
                     <div class="col d-flex">
                         <?php
-                        $allSum = $sum+30; 
-                            echo '<p for="'.$allSum.'" id="realPrice"> รวมทั้งหมด : ฿ '.$allSum.'</p>';
+                        $allSum = $sum+30 - $_SESSION['haveCou']; 
+                            echo '<p for="'.$allSum.'" id="realPrice"> รวมทั้งหมด : ฿ '.$allSum .'</p>';
                         ?>
                     </div>
                 </div>        
@@ -460,8 +462,14 @@
         if (isset($_POST['buy'])){
             echo "<script>alert('สั่งซื้อสำเร็จ');</script>";
         }
+
+
 ?>
 
 
 
 
+<?php
+  unset($_SESSION['coupon']);
+  unset($_SESSION['haveCou']);
+?>

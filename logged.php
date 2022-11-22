@@ -228,7 +228,7 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success me-3" type="submit"><i class="bi bi-search"></i></button>
       </form>
-      <button class="btn btn-primary me-1"><i class="bi bi-cart3"></i></button>
+      <button class="btn btn-primary me-1"><a href="basket.php" style="color: #FFF;"><i class="bi bi-cart3"></i></a></button>
       <button class="btn btn-primary" id="show" onclick="popup()"><i class="bi bi-person-circle">
           &nbsp; <?php echo $_SESSION['username']; ?>
         </i></button>

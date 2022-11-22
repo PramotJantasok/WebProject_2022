@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     include('server.php');
     error_reporting(0);
 
