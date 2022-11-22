@@ -276,6 +276,7 @@
     </div>
 
   </div>
+
   <div class="container-fluid pb-0 mb-0 justify-content-center text-light">
       <footer>
         <div class="row justify-content-center mb-0 pt-3 pb-0 row-2 px-3">
@@ -322,7 +323,7 @@
           </div>
         </div>
       </footer>
-    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

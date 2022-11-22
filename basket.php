@@ -55,6 +55,7 @@
             margin: 25% 0 0 0;
           }
         }
+        
     </style>
   </head>
   <body>
