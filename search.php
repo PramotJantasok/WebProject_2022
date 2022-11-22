@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css?ver=5.13.3' />
-    <link rel='stylesheet' href='css_file/productstyle2.css' />
+    <link rel="stylesheet" href="css_file/productstyle.css">
+    <!-- <link rel='stylesheet' href='css_file/productstyle2.css' /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -36,19 +37,19 @@
         }
 
         .row {
-            max-width: 1570px
+            width: 102%;
         }
 
         .row.row-collapse {
-            max-width: 1540px
+            width: 100%
         }
 
         .row.row-small {
-            max-width: 1562px
+            width: 100%
         }
 
         .row.row-large {
-            max-width: 1600px
+            width: 100%
         }
 
         .price-wrapper {
@@ -83,7 +84,7 @@
             text-align: center;
         }
         .container-fluid {
-        margin-top: 101px;
+        ;
       }
       .textfoot {
         margin-top: 7.25vh;
@@ -104,14 +105,73 @@
       .row-2 {
         background-color: #28323c;
       }
+      .container-fluid {
+        ;
+      }
+      .textfoot {
+        margin-top: 7.25vh;
+      }
+      @media (max-width: 576px) {
+        .textfoot {
+          margin-top: 0;
+        }
+      }
+      .txtfont {
+        font-family: "Mitr", sans-serif;
+        font-size: 18px;
+      }
+      .row-1 {
+        background-color: #1e242a;
+      }
+
+      .row-2 {
+        background-color: #28323c;
+      }
+      .imgfooter{
+        width: 150px;
+        height: auto;
+      }
+      .imgfooter2{
+        width: 130px;
+        height: auto;
+      }
+      .navbarlotto{
+  /* background-image: url("https://cdn.discordapp.com/attachments/604627208476033026/1044303222417916004/logobook.png"); */
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  background-color:#77b5fe;
+}
+.imgbylottov2{
+  position: absolute;
+  min-width:30%;
+  left:0px;
+  transform:translateY(-10px);
+}
+.imgbylottov2 img{
+  width:25%;
+  height:auto;
+}
+.box-image .img{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.img{
+  height:auto;
+}
     </style>
 </head>
 
 <body>
     <main id="main" class="">
-        <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center">
-            <h1 class="text-center">Book'n Stationery SHOP</h1>
-        </div>
+    <div class="container-fluid py-2  pad h d-flex align-items-center justify-content-center navbarlotto">
+    <div class="textlotto">
+      <h1>Book'n SHOP</h1>
+    </div>
+    <div class="imgbylottov2">
+      <img src="https://cdn.discordapp.com/attachments/604627208476033026/1044547857681748048/image.png" alt="">
+    </div>
+  </div>
 
         <?php
 
@@ -133,18 +193,18 @@
         </div>
         </div>
     </main>
-    <div class="container-fluid pb-0 mb-0 justify-content-center text-light">
+    <div class="container-fluid pb-0 mb-0  text-light">
       <footer>
-        <div class="row justify-content-center mb-0 pt-3 pb-0 row-2 px-3">
+        <div class="row  mb-0 pt-3 pb-0 row-2 px-3">
           <div class="col-12">
             <div class="row row-2">
               <div class="col-sm-4 text-center">
-                <img
-                  style="width: 150px"
+                <img class ="imgfooter" 
+                  style="width: 150px height: 0px"
                   src="https://media.discordapp.net/attachments/607137108590592000/1044553020970639410/itlogo.png?width=499&height=499"
                   alt="it"
                 />
-                <img
+                <img class = "imgfooter2"
                   style="width: 130px"
                   src="https://media.discordapp.net/attachments/607137108590592000/1044555799030149160/bookshoplogo.png"
                   alt="logo"
