@@ -4,7 +4,10 @@
     session_start();
     $_SESSION['page'] = "search.php";
     error_reporting(0);
-    $str = $_GET['str'];
+    $str = "";
+    if (isset($_POST['getSearch'])){
+        $str = $_POST['search'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -124,7 +127,7 @@
             <div class="shop-container">
                 <div class="woocommerce-notices-wrapper"></div>
                 <div class="products row row-small large-columns-3 medium-columns-3 small-columns-2">
-                    <?php setList("การ์ตูน"); ?>
+                    <?php setListSearch($str); ?>
                 </div><!-- row -->
             </div><!-- shop container -->
         </div>

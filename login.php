@@ -131,9 +131,9 @@
       </div>
     </div>
     <div class="col-8 col-md-8 col-sm-6 col-lg-6 col-xl-5 col-xxl-6 d-flex justify-content-end ">
-      <form class="d-flex col-8 col-md-6 col-sm-7 col-lg-6 col-xl-6 col-xxl-8" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success me-3" type="submit" ><i class="bi bi-search"></i></button>
+      <form class="d-flex col-8 col-md-6 col-sm-7 col-lg-6 col-xl-6 col-xxl-8" role="search" action="search.php" method="POST">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+        <button class="btn btn-outline-success me-3" type="submit" name="getSearch"><i class="bi bi-search"></i></button>
       </form>
       <button class="btn btn-primary me-1"><a href="basket.php" style="color: #FFF;"><i class="bi bi-cart3"></i></a></button>
       <button class="btn btn-primary " id="show" onclick="popup()"><i class="bi bi-person-circle">

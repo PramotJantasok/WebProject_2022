@@ -82,7 +82,7 @@
   width:25%;
 }
 .container-fluid {
-        ;
+        
       }
       .textfoot {
         margin-top: 7.25vh;
@@ -218,18 +218,6 @@
                     }
                   }
               ?>
-
-
-              <!-- <div class="swiper-slide box">
-                <div class="image">
-                  <img src="https://storage.naiin.com/system/application/bookstore/resource/product/202210/562076/1000255109_front_XXL.jpg?imgname=SPY-X-FAMILY-%E0%B8%A5.9" width="250" height="300" />
-                </div>
-                <div class="content">
-                  <h3>featured books</h3>
-                  <div class="price">$15.99 <span>$20.99</span></div>
-                  <a href="#" class="btn2">รายละเอียดสินค้า</a>
-                </div>
-              </div> -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
