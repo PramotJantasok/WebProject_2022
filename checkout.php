@@ -307,13 +307,15 @@
                                 $sum = 0;
                                 $amount =0;
                                     while($row = $responesBasket->fetchArray(SQLITE3_ASSOC)){
-                                        $price = $row['PRICE']*$row['AMOUNT']; $sum += $price;
-                                        echo '<tr>';
-                                        echo '<th scope="row">'.$i.'</th>'; ++$i;
-                                        echo '<td>'.$row['NAMEPRODUCT'].'</td>';
-                                        echo '<td> &nbsp; x '.$row['AMOUNT'].'</td>'; $amount += $row['AMOUNT'];
-                                        echo '<td>฿ '.number_format($price,2,'.','').'</td>';
-                                        echo '</tr>';
+                                        if ($row['ID'] == $_SESSION['id']){
+                                            $price = $row['PRICE']*$row['AMOUNT']; $sum += $price;
+                                            echo '<tr>';
+                                            echo '<th scope="row">'.$i.'</th>'; ++$i;
+                                            echo '<td>'.$row['NAMEPRODUCT'].'</td>';
+                                            echo '<td> &nbsp; x '.$row['AMOUNT'].'</td>'; $amount += $row['AMOUNT'];
+                                            echo '<td>฿ '.number_format($price,2,'.','').'</td>';
+                                            echo '</tr>';
+                                        }
                                     }
                                 ?>             
                                 <tr class="color">
