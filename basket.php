@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php 
-
   include('server.php');
 ?>
 
@@ -122,36 +121,39 @@
                     $retBK = $myBasket->query($sqlBK);
                     
                     while ($row = $retBK->fetchArray(SQLITE3_ASSOC)){
-                      $sumAmount = $row['AMOUNT'] * $row['PRICE']; $amount += $row['AMOUNT']; $sumPrice += $sumAmount;
-                      echo '<tr>';
-                      echo '<th scope="row">';
-                      echo '<div class="row ">';
-                      echo '<div class="col d-flex text-center align-items-center ">';
-                      echo '<img  class="img-fluid me-4" src="'.$DATA[$row['INDEXJSON']]->img.'" />';
-                      echo '</div>';
-                      echo '</div>';
-                      echo '</th>';
-                      echo '<td>
-                      <div class"over">
-                        <p>'.$row['NAMEPRODUCT'].'</p>
-                      </div>
-                      </td>';
-                      echo '<td>';
-                      echo '<form action="server.php" method="POST">';
-                      echo '<div class="col-xxl-7 col-xl-8 col-lg-6 col-12 d-flex justify-content-start min">';
-                      echo '<div class="input-group ">';
-                      echo '<button class="btn btn-outline-secondary btn-sm" type="submit" id="button-addon1" value='.$row['INDEXJSON'].' name="subBook" >-</button>';
-                      echo '<input type="number" class="form-control text-center"  value="'.$row['AMOUNT'].'" disabled name="bookAmount">';
-                      echo '<button class="btn btn-outline-secondary btn-sm" type="submit" id="button-addon1" value='.$row['INDEXJSON'].' name="addBook" >+</button>';
-                      echo '</div>';
-                      echo '</div>';
-                      echo '</td>';
-                      echo '<td class=""><h5 style="margin:45% 0 0 0;" class="pr">'.number_format($sumAmount,2,'.','').'</td></h5>';
-                      echo '<td>
-                            <button type="submit" class="btn btn-danger btn-sm dr" name="deleteBasket" value='.$row['INDEXJSON'].' >นำออก</button>
-                            </td>';
-                      echo '</form>';
-                      echo '</tr>';   
+                      if ($row['ID'] == $_SESSION['id']){
+                        $sumAmount = $row['AMOUNT'] * $row['PRICE']; $amount += $row['AMOUNT']; $sumPrice += $sumAmount;
+                        echo '<tr>';
+                        echo '<th scope="row">';
+                        echo '<div class="row ">';
+                        echo '<div class="col d-flex text-center align-items-center ">';
+                        echo '<img  class="img-fluid me-4" src="'.$DATA[$row['INDEXJSON']]->img.'" />';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</th>';
+                        echo '<td>
+                        <div class"over">
+                          <p>'.$row['NAMEPRODUCT'].'</p>
+                        </div>
+                        </td>';
+                        echo '<td>';
+                        echo '<form action="server.php" method="POST">';
+                        echo '<div class="col-xxl-7 col-xl-8 col-lg-6 col-12 d-flex justify-content-start min">';
+                        echo '<div class="input-group ">';
+                        echo '<button class="btn btn-outline-secondary btn-sm" type="submit" id="button-addon1" value='.$row['INDEXJSON'].' name="subBook" >-</button>';
+                        echo '<input type="number" class="form-control text-center"  value="'.$row['AMOUNT'].'" disabled name="bookAmount">';
+                        echo '<button class="btn btn-outline-secondary btn-sm" type="submit" id="button-addon1" value='.$row['INDEXJSON'].' name="addBook" >+</button>';
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</td>';
+                        echo '<td class=""><h5 style="margin:45% 0 0 0;" class="pr">'.number_format($sumAmount,2,'.','').'</td></h5>';
+                        echo '<td>
+                              <button type="submit" class="btn btn-danger btn-sm dr" name="deleteBasket" value='.$row['INDEXJSON'].' >นำออก</button>
+                              </td>';
+                        echo '</form>';
+                        echo '</tr>'; 
+                      }
+  
                     }
                     $myBasket->close();
                   ?>
