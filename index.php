@@ -81,7 +81,7 @@
   width:28%;
 }
 .container-fluid {
-        margin-top: 101px;
+        ;
       }
       .textfoot {
         margin-top: 7.25vh;
