@@ -32,19 +32,19 @@
         }
 
         .row {
-            max-width: 1570px
+            width: 102%;
         }
 
         .row.row-collapse {
-            max-width: 1540px
+            width: 100%
         }
 
         .row.row-small {
-            max-width: 1562px
+            width: 100%
         }
 
         .row.row-large {
-            max-width: 1600px
+            width: 100%
         }
 
         .price-wrapper {
@@ -79,7 +79,7 @@
             text-align: center;
         }
         .container-fluid {
-        margin-top: 101px;
+        ;
       }
       .textfoot {
         margin-top: 7.25vh;
@@ -99,6 +99,14 @@
 
       .row-2 {
         background-color: #28323c;
+      }
+      .imgfooter{
+        width: 150px;
+        height: auto;
+      }
+      .imgfooter2{
+        width: 130px;
+        height: auto;
       }
     </style>
 </head>
@@ -129,18 +137,18 @@
         </div>
         </div>
     </main>
-    <div class="container-fluid pb-0 mb-0 justify-content-center text-light">
+    <div class="container-fluid pb-0 mb-0  text-light">
       <footer>
-        <div class="row justify-content-center mb-0 pt-3 pb-0 row-2 px-3">
+        <div class="row  mb-0 pt-3 pb-0 row-2 px-3">
           <div class="col-12">
             <div class="row row-2">
               <div class="col-sm-4 text-center">
-                <img
-                  style="width: 150px"
+                <img class ="imgfooter" 
+                  style="width: 150px height: 0px"
                   src="https://media.discordapp.net/attachments/607137108590592000/1044553020970639410/itlogo.png?width=499&height=499"
                   alt="it"
                 />
-                <img
+                <img class = "imgfooter2"
                   style="width: 130px"
                   src="https://media.discordapp.net/attachments/607137108590592000/1044555799030149160/bookshoplogo.png"
                   alt="logo"
