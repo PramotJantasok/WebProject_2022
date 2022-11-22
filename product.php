@@ -117,6 +117,22 @@
   width:25%;
   height:auto;
 }
+.row {
+            width: 102%;
+            margin-top:5%;
+        }
+
+        .row.row-collapse {
+            width: 100%
+        }
+
+        .row.row-small {
+            width: 100%
+        }
+
+        .row.row-large {
+            width: 100%
+        }
         
     </style>
 </head>
@@ -220,7 +236,8 @@
          </div>
         </div>
     </div>
-    <div class="container-fluid pb-0 mb-0  text-light">
+            </div>
+    <div class="container-fluid pb-0 mb-0 row-2 text-light">
       <footer>
         <div class="row  mb-0 pt-3 pb-0 row-2 px-3">
           <div class="col-12">

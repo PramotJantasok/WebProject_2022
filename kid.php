@@ -32,6 +32,7 @@
 
         .row {
             width: 102%;
+            margin-top:5%;
         }
 
         .row.row-collapse {
