@@ -118,13 +118,13 @@
         .card:hover .detail{
           transform: translateY(25px);
         }
-        .button{
+        .buttonlotto{
           padding: 22px;
           transform: translateY(70px);
           transition: 0.5s;
           z-index:3;
         }
-        .card:hover .button{
+        .card:hover .buttonlotto{
           transform: translateY(-20px);
         }
         .word2{
@@ -260,7 +260,7 @@
                                 <span class="idd">64070220@kmitl.ac.th</span><br>
                                 <span class="join">BookShop@ITKMITL</span><br>
                               </div>
-                              <div class="button">
+                              <div class="buttonlotto">
                                 <form action="loging.php" method="POST">
                                 <button class="butt_out button2" name="logout">Log Out</button> 
                                 </form>
