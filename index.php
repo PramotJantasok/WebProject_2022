@@ -167,21 +167,21 @@
                   $url = "./jsonFile/data.json";
                   $response = file_get_contents($url);
                   $data = json_decode($response);
-
+                  $j = 0;
                   foreach ($data as $getBooks){
 
                     if ($getBooks->recommend == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
-                          echo '<img src="' .$getBooks->img. '" width="300" height="320" />';
+                          echo '<a href="product.php?book='.$j.'"><img src="' .$getBooks->img. '" width="300" height="320" /></a>';
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
                           echo '<div class="price">$'. $getBooks->price .'</div>';
-                          echo '<a href="#" class="btn2">รายละเอียดสินค้า</a>';
+                          echo '<a href="product.php?book='.$j.'" class="btn2">รายละเอียดสินค้า</a>';
                         echo '</div>';
                       echo '</div>';
-                    }
+                    }++$j;
                   }
               ?>
             </div>
@@ -202,20 +202,21 @@
                   $url = "./jsonFile/data.json";    
                   $response = file_get_contents($url);
                   $data = json_decode($response);
+                  $k = 0;
                   foreach ($data as $getBooks){
 
                     if ($getBooks->hot == "YES"){
                       echo '<div class="swiper-slide box">';
                         echo '<div class="image">';
-                          echo '<img src="' .$getBooks->img. '" width="300" height="320" />';
+                          echo '<a href="product.php?book='.$k.'"><img src="' .$getBooks->img. '" width="300" height="320" /></a>';
                         echo '</div>';
                         echo '<div class="content">';
                           echo '<h3 maxlength="10">' . $getBooks->name . '</h3>';
                           echo '<div class="price">$'. $getBooks->price .'</div>';
-                          echo '<a href="#" class="btn2">รายละเอียดสินค้า</a>';
+                          echo '<a href="product.php?book='.$k.'" class="btn2">รายละเอียดสินค้า</a>';
                         echo '</div>';
                       echo '</div>';
-                    }
+                    }++$k;
                   }
               ?>
             </div>
@@ -248,7 +249,7 @@
                         echo '<div class="content">';
                           echo '<h3>' . $getBooks->name . '</h3>';
                           echo '<div class="price"> <span>$'.$getBooks->price.'</span>$'.$getBooks->discount.'</div>';
-                          echo '<a href="#" class="btn2">รายละเอียดสินค้า</a>';
+                          echo '<a href="product.php?book='.$i.'" class="btn2">รายละเอียดสินค้า</a>';
                         echo '</div>';
                       echo '</div>';
                     }
