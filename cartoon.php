@@ -79,7 +79,7 @@
             text-align: center;
         }
         .container-fluid {
-        ;
+        
       }
       .textfoot {
         margin-top: 7.25vh;
@@ -144,7 +144,7 @@
             <div class="row row-2">
               <div class="col-sm-4 text-center">
                 <img class ="imgfooter" 
-                  style="width: 150px height: 0px"
+                  style="width: 150px height 0px"
                   src="https://media.discordapp.net/attachments/607137108590592000/1044553020970639410/itlogo.png?width=499&height=499"
                   alt="it"
                 />
