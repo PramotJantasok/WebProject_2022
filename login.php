@@ -16,6 +16,10 @@
 
 <head>
 <style>
+   @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+  body{
+    font-family: 'Mitr', sans-serif;
+  }
   .outbox{
     position: relative;
   }
@@ -90,7 +94,7 @@
   border-color:#0f796c ;
 }
 </style>
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg red">
   <div class="container">
     <div class="col-md-4 col-sm-6 col-lg-7 col-xl-7 col-xxl-7 col-4 n_link">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

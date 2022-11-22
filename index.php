@@ -23,6 +23,10 @@
 
   <title>Book'n Stationery SHOP</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+  body{
+    font-family: 'Mitr', sans-serif;
+  }
   .featured .featured-slider .box .content h3{
     font-size: 1rem;
     color:var(--black);
@@ -66,13 +70,27 @@
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
+  background-color:#77b5fe;
+}
+.imgbylottov2{
+  position: absolute;
+  min-width:30%;
+  left:0px;
+}
+.imgbylottov2 img{
+  width:28%;
 }
   </style>
 </head>
 
 <body>
-  <div class="container-fluid py-2 bg-info pad h d-flex align-items-center justify-content-center navbarlotto">
-    <h1 class="text-center">Book'n Stationery SHOP</h1>
+  <div class="container-fluid py-2  pad h d-flex align-items-center justify-content-center navbarlotto">
+    <div class="textlotto">
+      <h1>Book'n SHOP</h1>
+    </div>
+    <div class="imgbylottov2">
+      <img src="https://cdn.discordapp.com/attachments/604627208476033026/1044547857681748048/image.png" alt="">
+    </div>
   </div>
 
 <?php 

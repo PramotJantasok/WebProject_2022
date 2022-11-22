@@ -40,6 +40,26 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <?php echo '<title>' . $namePage . '</title>'; ?>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+        body{
+            font-family: 'Mitr', sans-serif;
+        }
+        .namebook h3{
+            font-size: 45px;
+        }
+        .namebook p{
+            font-size: 30px;
+        }
+        .imgbytle{
+            border-right: 2px solid gray;
+            
+        }
+        .imgbylotto{
+            transition: 0.5s;
+        }
+        .imgbylotto:hover{
+            transform:scale(1.1);
+        }
         .price-wrapper {
             font-size: 20px;
             right: 10px;
@@ -48,7 +68,9 @@
         }
         .dis{
             font-size: 20px;
+            font-family: 'Mitr', sans-serif;
         }
+        
     </style>
 </head>
 
@@ -70,13 +92,15 @@
     <div class="container py-4">
         <div class="row py-4">
          <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 py-4 ">
-            <?php echo '<img src="'.$imgPage.'" class="img-fluid" />'; ?>
+            <div class="imgbytle">
+            <?php echo '<img class="imgbylotto" src="'.$imgPage.'" class="img-fluid" />'; ?>
+            </div>
          </div>
          <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 py-4 ">
-            <div class="row py-4">
-                <div class="col py-2">
+            <div class="row ">
+                <div class="col py-2 namebook">
                     <?php echo '<h3>' .$namePage. '</h3>'; ?>
-                    <?php echo '<p>'. $bookWriter .'</p>'; ?>
+                    <?php echo '<p> ผู้แต่ง: '. $bookWriter .'</p>'; ?>
                  </div>
              </div>
              <div class="row">
