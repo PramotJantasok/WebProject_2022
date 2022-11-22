@@ -22,10 +22,16 @@
         }
         .close{
           cursor: pointer;
+          z-index: 1;
+          color: red;
+          display: flex;
+          justify-content:flex-end;
+          padding: 0px 20px 0px 0px;
+          font-size: 30px;
         }
 
         .popup .close:hover {
-            color: #333;
+            color: red;
         }
 
         .popup .ctt {
@@ -41,14 +47,100 @@
                 width: 70%;
             }
         }
-
+        .contents{
+          overflow:visible;
+        }
         .card {
             width: 500px;
+            height:200px;
             background-color: #efefef;
             border: none;
+            position:relative;
+            transition:0.5s;
             /* cursor: pointer; */
         }
-
+        .card:hover{
+          height:460px;
+        }
+        .backgroundimg{
+          background-image:url(https://img.freepik.com/free-vector/books-seamless-pattern-doodle-outline-textbooks_107791-9584.jpg?w=2000);
+          position: absolute;
+          width:100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0.1;
+          background-size: cover;
+        }
+        .image1{
+          position:absolute;
+          left:50%;
+          top:-50px;
+          transform:translateX(-50%);
+          width:150px;
+          height:150px;
+          transition:0.5s;
+          z-index:2;
+        }
+        .image1 img{
+          position:absolute;
+          left:0;
+          top:0;
+          width:100%;
+          height:100%;
+          object-fit:cover;
+          transition:0.5s;
+        }
+        .card:hover .image1{
+          width:250px;
+          height:250px;
+        }
+        .word1{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          overflow:hidden;
+        }
+        .detail{
+          padding: 40px;
+          display: flex;
+          flex-direction:column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          transform: translateY(169px);
+          transition: 0.5s;
+          z-index:3;
+        }
+        .card:hover .detail{
+          transform: translateY(25px);
+        }
+        .button{
+          padding: 22px;
+          transform: translateY(70px);
+          transition: 0.5s;
+          z-index:3;
+        }
+        .card:hover .button{
+          transform: translateY(-20px);
+        }
+        .word2{
+          position: absolute;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+        }
+        .button2{
+          border: 1px solid black;
+          border-radius: 35px;
+        }
+        .button2:hover{
+          background-color: #ff5f95;
+        }
         .profile {
             border-radius: 50%;
         }
@@ -82,7 +174,7 @@
             height: 40px;
             width: 150px;
             border: none;
-            background-color: #000;
+            background-color: #555;
             color: #fff;
             font-size: 15px
         }
@@ -149,32 +241,39 @@
 <div class="modals" id="login_popup">
   <div class="container d-flex justify-content-center">
     <div class="contents justify-content-center">
-        <div class="popup">
-            <h3>My Profile</h3>
-            <a class="close" onclick="closePup()" >&times;</a>
-            <div class="ctt">
-                <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
-                    <div class="card p-4">
-                        <div class=" image d-flex flex-column justify-content-center align-items-center  mt-4 mb-4 p-3 d-flex">
-                                <img class="profile justify-content-center align-items-center" src="https://preview.redd.it/1zbe7a0j3kt61.png?auto=webp&s=89247fc063eff076859ba310a7971a4bdb772233" height="125" width="125" />
-                            <span class="name mt-3">Ratchanon Kathip</span>
-                            <span class="idd">64070220@kmitl.ac.th</span>
-                            <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
+        <!-- <div class="popup"> -->
+            
+            <!-- <div class="ctt"> -->
+                <!-- <div class="container mt-4 mb-4 p-3 d-flex justify-content-center"> -->
+                    <div class="card">
+                      <div class="backgroundimg"></div>
+                    <a class="close" onclick="closePup()" >&times;</a>
+                        <div class=" image1">
+                                <img class="profile" src="https://preview.redd.it/1zbe7a0j3kt61.png?auto=webp&s=89247fc063eff076859ba310a7971a4bdb772233" height="125" width="125" />
+                            <!-- <div class="d-flex flex-row justify-content-center align-items-center gap-2"> 
                                 <span class="idd1 mt-3">#2545</span>
-                            </div>
-                            <div class=" d-flex mt-2">
-                                <form action="loging.php" method="POST">
-                                <button class="butt_out" name="logout">Log Out</button> 
-                                </form>
-                            </div>
-                            <div class=" px-2 rounded mt-4 date "> 
-                                <span class="join">BookShop@ITKMITL</span>
-                            </div>
+                            </div> -->
                         </div>
+                            <div class=" d-flex mt-2 word1">
+                              <div class="detail">
+                                <span class="name mt-3">Ratchanon Kathip</span><br>
+                                <span class="idd">64070220@kmitl.ac.th</span><br>
+                                <span class="join">BookShop@ITKMITL</span><br>
+                              </div>
+                              <div class="button">
+                                <form action="loging.php" method="POST">
+                                <button class="butt_out button2" name="logout">Log Out</button> 
+                                </form>
+                              </div>
+                            </div>
+                            <!-- <div class=" px-2 rounded mt-4 date word2"> 
+                                <span class="join">BookShop@ITKMITL</span>
+                            </div> -->
+                            
                     </div>
-                </div>
-            </div>
-        </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
   </div>
 </div>
