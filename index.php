@@ -76,9 +76,10 @@
   position: absolute;
   min-width:30%;
   left:0px;
+  transform:translateY(-10px);
 }
 .imgbylottov2 img{
-  width:28%;
+  width:25%;
 }
 .container-fluid {
         ;
@@ -122,7 +123,6 @@
     }else{
       include('logged.php');
     }
-
 ?>
 
   <div class="container-fluid">
@@ -331,9 +331,11 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="./js_file/modals.js"></script>
   <script src="./js_file/slider.js"></script>
-
+  
 
 
 </body>
-
+<?php
+  session_destroy();
+?>
 </html>
