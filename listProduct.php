@@ -61,8 +61,10 @@ function setListSearch($str){
     $response = file_get_contents($url);
     $data = json_decode($response);
     $indexNumber = 0;
+    $have = 0;
     foreach ($data as $getBooks){
         if ($getBooks->group == $str || $getBooks->name == $str || $getBooks->Writer == $str){
+            ++$have;
             echo '<div class="product-small  col product-type-simple">';
             echo '<div class="product-small box ">';
             echo '<div class="box-image">';
@@ -108,6 +110,10 @@ function setListSearch($str){
             echo '</div>';
         }
     $indexNumber += 1;
+    }
+
+    if ($have == 0){
+        echo '<h1 style="margin: 5% 0 0 0 ;">ไม่พบหนังสือ</h1>';
     }
 }
 
