@@ -335,7 +335,5 @@
 
 
 </body>
-<?php
-  session_destroy();
-?>
+
 </html>
