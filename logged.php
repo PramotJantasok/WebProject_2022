@@ -256,8 +256,8 @@
                         </div>
                             <div class=" d-flex mt-2 word1">
                               <div class="detail">
-                                <span class="name mt-3">Ratchanon Kathip</span><br>
-                                <span class="idd">64070220@kmitl.ac.th</span><br>
+                                <?php echo '<span class="name mt-3">'.$_SESSION['username'].'</span><br>'; ?>
+                                <?php echo '<span class="idd">'.$_SESSION['email'].'</span><br>'; ?>
                                 <span class="join">BookShop@ITKMITL</span><br>
                               </div>
                               <div class="buttonlotto">
